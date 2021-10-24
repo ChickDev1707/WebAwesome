@@ -2,9 +2,9 @@
   "name": "webawesomeblog",
   "version": "1.0.0",
   "description": "a blog to share web development knowlege",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devStart": "nodemon ./src/server.js"
   },
   "author": "",
   "license": "ISC",

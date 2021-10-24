@@ -1,0 +1,77 @@
+<%- contentFor("head") %> 
+<title>Search page</title>
+<script src="https://kit.fontawesome.com/a7cf4e395f.js" crossorigin="anonymous"></script>
+<style>
+  .main{
+    width: 60%;
+  }
+  *{
+    box-sizing: border-box;
+  }
+  .search-bar>*{
+    font-size: .9rem;
+    border: none;
+    outline: none;
+    margin-bottom: 1rem;
+  }
+  form button[type="submit"]{
+    background-color: #2980b9;
+    color: white;
+    padding: .5rem;
+    width: 8rem;
+  }
+  form input[name="searchKey"]{
+    background-color: rgb(221, 221, 221);
+    padding: .25rem 0 .25rem 1rem;
+    flex-grow: 1;
+  }
+  .advanced-search-collapse-btn{
+    border: none;
+    color: #2980b9;
+    cursor: pointer;
+    background: none;
+  }
+</style>
+
+<%- contentFor("body") %> 
+<div class="container main">
+  <h2>Search</h2>
+  <form action="/search" method="GET">
+    <div class="d-flex search-bar">
+      <input name="searchKey" placeholder="Nhap tieu de bai viet" type="text">
+      <button type="submit"><i class="fas fa-search"></i> search</button>
+    </div>
+    <div class="d-flex justify-content-between">
+      <h4>Result</h4>
+      <button class="advanced-search-collapse-btn" type="button" data-bs-toggle="collapse" data-bs-target="#advanced-search-panel" aria-expanded="false" aria-controls="advanced-search-panel">Advanced search <i class="fas fa-angle-down"></i></button>
+    </div>
+    <div class="collapse" id="advanced-search-panel">
+      <div style="padding: .5rem 0;">
+        <span>Chuyên mục: </span>
+        <select name="category" aria-label=".form-select-sm example">
+          <option value="all" selected>Tất cả</option>
+          <option value="html">HTML</option>
+          <option value="js">js</option>
+          <option value="css">css</option>
+        </select>
+        <span>Thời gian: </span>
+        <select name="time" aria-label=".form-select-sm example">
+          <option value="Infinity" selected>Tất cả</option>
+          <option value="1">Hôm nay</option>
+          <option value="7">7 ngày trước</option>
+          <option value="30">30 ngày trước</option>
+        </select>
+      </div>
+    </div>
+  </form>
+  <p><strong><%= result.length %></strong> Kết quả phù hợp</p>
+  <div class="result-box">
+    <% if(result.length == 0){ %>
+      <%- include('../partials/no-result-item.ejs') %> 
+    <% }else{ %>
+      <% result.forEach((post)=>{ %>
+        <%- include('../partials/search-post-item.ejs', {post}) %> 
+      <% }) %> 
+    <% } %> 
+  </div>
+</div>
