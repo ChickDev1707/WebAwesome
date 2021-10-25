@@ -10,6 +10,23 @@ router.get('/', (req, res)=>{
 })
 
 // posts route
+router.get('/all-post', (req, res)=>{
+  let currentPage = parseInt(req.query.page) ;
+  const perPage = 6;
+  let totalPost = Posts.length;
+  let totalPage = Math.ceil(totalPost/perPage);
+  let start = (currentPage-1)*perPage;
+  let end = currentPage*perPage;
+
+  let result = Posts.slice(start,end);
+  
+  let pagination = [currentPage, totalPage];
+
+  res.render('pages/allPost.ejs',{result,pagination})
+})
+
+
+
 router.get('/posts/:id', (req, res)=>{
   let postDir = 'post-'+ req.params.id
   res.render('pages/posts/' + postDir)

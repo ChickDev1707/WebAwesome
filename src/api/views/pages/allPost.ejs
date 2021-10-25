@@ -1,0 +1,153 @@
+<%- contentFor("head") %> 
+<title>Tất cả bài viết</title>
+
+<%- contentFor("body") %> 
+
+<div class="row" style="margin-top: 20px;">
+    <div class="container home_page">
+        <div class="row">
+
+            <div class="col-sm-8" id="listpost">
+                <% if(result.length == 0){ %>
+                    <%- include('../partials/no-result-item.ejs') %> 
+                  <% }else{ %>
+                    <% result.forEach((post)=>{ %>
+                      <%- include('../partials/all-post-item.ejs', {post}) %> 
+                    <% }) %> 
+                  <% } %> 
+            </div>
+            <div class="col-sm-4">
+                <div class="sidebar">
+                    <div class="sidebar_searchbox">
+                        <input type="text" placeholder="Search...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="category">
+                        <h4>Category</h4>
+                        <ul class="category_list">
+                            <li>
+                                <a href=""><i class="fas fa-angle-right"></i>Javascript cơ bản</a></li>
+                            <li>
+                                <a href=""><i class="fas fa-angle-right"></i>Tạo landing page cơ bản với HTML CSS</a></li>
+                            <li>
+                                <a href=""><i class="fas fa-angle-right"></i>Lập trình c# từ cơ bản đến nâng cao</a></li>
+                            <li>
+                                <a href=""><i class="fas fa-angle-right"></i>Fullstack với Javascript, Reactjs, Nodejs</a></li>
+                            <li>
+                                <a href=""><i class="fas fa-angle-right"></i>Thiết kế và quản trị CSDL</a></li>
+                            <li>
+                                <a href=""><i class="fas fa-angle-right"></i>Flutter cho người mới bắt đầu</a></li>
+                            <li>
+                                <a href=""><i class="fas fa-angle-right"></i>Tự học lập trình mobile</a></li>
+                            <li>
+                                <a href=""><i class="fas fa-angle-right"></i>Javascript Nâng cao</a></li>
+                            <li>
+                                <a href=""><i class="fas fa-angle-right"></i>Lập trình web asp.net</a></li>
+                        </ul>
+                    </div>
+                    <div class="topview">
+                        <h4>Top views</h4>
+                        <ul class="topview_list">
+                            <li>
+                                <a href="">
+                                    <div class="topview_img">
+                                        <img src="../../../public/assets/images/react5.jpg" alt="">
+                                    </div>
+                                    <div class="topview_content">
+                                        <h6>React-DOM là gì? Tại sao cần React-DOM?</h6>
+                                        <div class="topview_content-head">
+
+                                            <p><i class="fas fa-eye"></i>2006</p>
+                                            <p><i class="fas fa-calendar-alt"></i>12/10/2021</p>
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="topview_img">
+                                        <img src="../../../public/assets/images/js-item2.jpg" alt="">
+                                    </div>
+                                    <div class="topview_content">
+                                        <h6>React-DOM là gì? Tại sao cần React-DOM?</h6>
+                                        <div class="topview_content-head">
+
+                                            <p><i class="fas fa-eye"></i>1908</p>
+                                            <p><i class="fas fa-calendar-alt"></i>12/10/2021</p>
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="topview_img">
+                                        <img src="../../../public/assets/images/js-item1.jpg" alt="">
+                                    </div>
+                                    <div class="topview_content">
+                                        <h6>React-DOM là gì? Tại sao cần React-DOM?</h6>
+                                        <div class="topview_content-head">
+
+                                            <p><i class="fas fa-eye"></i>1902</p>
+                                            <p><i class="fas fa-calendar-alt"></i>12/10/2021</p>
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="topview_img">
+                                        <img src="../../../public/assets/images/htmlcss1.jpg" alt="">
+                                    </div>
+                                    <div class="topview_content">
+                                        <h6>React-DOM là gì? Tại sao cần React-DOM?</h6>
+                                        <div class="topview_content-head">
+
+                                            <p><i class="fas fa-eye"></i>1859</p>
+                                            <p><i class="fas fa-calendar-alt"></i>12/10/2021</p>
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="lastpost">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8" style="margin-bottom: 100px;">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                       <% if (pagination[0] == 1){ %>
+                        <li class="page-item disabled"  ><a class="page-link" disabled href="">Previous</a></li>
+                        <%   } else { %>
+                        <li class="page-item"><a class="page-link" href="/all-post?page=<%- pagination[0] - 1 %>">Previous</a></li>
+                        <%  } %>
+                        
+                        <% for(let i = 1; i <= pagination[1]; i++) {%>
+                        <% if (i == pagination[0]) { %>
+                            <li class="page-item active"><a class="page-link" href="/all-post?page=<%- i %>">   <%- i %></a></li>
+                        <% } else { %>
+                        <li class="page-item"><a class="page-link" href="/all-post?page=<%- i %>">   <%- i %></a></li>
+                        <%  } %>
+                        <% } %>
+                        <% if (pagination[0] == pagination[1] ) { %>
+                        <li class="page-item disabled"><a class="page-link" href="">Next</a></li>
+                        <% } else { %>
+                        <li class="page-item"><a class="page-link" href="/all-post?page=<%- pagination[0] + 1 %>">Next</a></li>
+                        <% } %>
+                        
+                    </ul>
+                  </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <li class="page-item"><a class="page-link" href="/all-post?page=2">2</a></li>
+<li class="page-item"><a class="page-link" href="/all-post?page=3">3</a></li>
+<li class="page-item"><a class="page-link" href="/all-post?page=4">4</a></li> -->

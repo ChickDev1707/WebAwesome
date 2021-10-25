@@ -1,0 +1,12 @@
+<a href="" class="allPost_item">
+    <div class="allPost_item-img">'
+        <img src="public/assets/images/<%= post.image %> " alt="">
+    </div>'
+    <div class="allPost_item-content">
+    <div class="allPost_item-content-head">
+        <p><%= post.category %> </p>
+        <p><i class="fas fa-calendar-alt"></i><%= post.date.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric'}); %></p></div>
+        <h5><%= post.title %></h5>
+        <p class="desc"><%= post.intro %> </p>
+    </div>
+</a>
