@@ -1,0 +1,75 @@
+@import url('../../settings/variables.css');
+
+.info-sec{
+  padding: 4rem 4rem 10rem;
+  height: 1200px;
+}
+.info-sec p{
+  margin: 0;
+}
+.info-sec .info-template{
+  position: relative;
+  /* margin-top: -5rem; */
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-auto-flow: row;
+  gap: 2rem;
+}
+.info-card{
+  background-color: white;
+  border-radius: .3rem;
+  text-align: center;
+}
+p.info-title{
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+p.description{
+  font-size: 1.2rem;  
+  line-height: 1.7rem;
+  margin-bottom: 1rem;
+}
+.description-highlight{
+  font-weight: bold;
+  color: #4c6680;
+}
+
+.info-card img{
+  width: 100%;
+  height: 40%;
+}
+.info-card .text-wrapper{
+  padding: 1.4rem;
+}
+.info-card .text-wrapper a{
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.info-card-extended{
+  grid-column: 1/3;
+  text-align: start;
+}
+.info-card-extended img{
+  width: 50%;
+  height: 100%;
+}
+
+.info-card-extended .text-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+}
+.info-card-extended .text-wrapper div img{
+  width: 10rem;
+}
+
+/* info sec */
+/* ------------------------------------------------------------- */

@@ -1,0 +1,71 @@
+@import url('../../settings/variables.css');
+
+.community-sec{
+  padding: 5rem 0;
+  height: 1000px;
+  flex-wrap: nowrap;
+}
+.community-sec .middle{
+  height: 100%;
+  text-align: center;
+}
+.middle p:first-of-type{
+  margin: 0;
+  margin-top: 4rem;
+  font-size: 2.4rem;;
+  font-weight: 900;
+}
+.middle img{
+  margin-top: 4rem;
+  width: 90%;
+}
+.middle .amount-text{
+  margin: 0;
+  margin-top: 2rem;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.community-sec .left-container, .right-container{
+  width: 30%;
+  padding: 4rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.left-container .dot-row:first-of-type {
+  justify-content: flex-end;
+}
+.right-container .dot-row:first-of-type {
+  justify-content: center;
+}
+.left-container .dot-row:first-of-type .dot:first-of-type{
+  margin-right: 2rem;
+}
+.dot{
+  border-radius: 50%;
+  background-color: var(--accent);
+}
+.dot-row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.small-dot{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.medium-dot{
+  width: 3rem;
+  height: 3rem;
+}
+.big-dot{
+  width: 5rem;
+  height: 5rem;
+}
+.super-dot{
+  width: 9rem;
+  height: 9rem;
+}

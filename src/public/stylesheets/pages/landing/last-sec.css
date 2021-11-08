@@ -1,0 +1,26 @@
+@import url('../../settings/variables.css');
+
+.last-sec{
+  height: auto;
+  padding: 10rem;
+  background-color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.last-sec h1{
+  margin: 0;
+  margin-bottom: 3rem;
+  font-size: var(--font-size-large-title);
+  color: white;
+}
+.last-sec button{
+  width: 40%;
+  padding: 1rem;
+  font-size: 1rem;
+  background-color: var(--blue-primary);
+  color: white;
+  font-weight: bold;
+}
+/* last sec */
+/* ------------------------------------------------------------- */

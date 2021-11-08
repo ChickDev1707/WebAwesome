@@ -1,0 +1,47 @@
+@import url('../../settings/variables.css');
+
+.page-title-sec{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: var(--secondary);
+  justify-content: center;
+  height: 100vh;
+}
+.page-title-sec .wrapper{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: -10rem;
+}
+
+.page-title-sec p{
+  margin: 0;
+  text-align: center;
+}
+.page-title-sec .wrapper .main-title{
+  font-size: 5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 4rem;
+}
+.page-title-sec .wrapper .description{
+  font-size: 1.8rem;
+  margin-bottom: 2.5rem;
+  color: gray;
+
+}
+.page-title-sec .wrapper .description span{
+  color: white;
+  font-weight: bold;
+}
+.page-title-sec .wrapper .btn-wrapper{
+  justify-content: center;
+}
+.page-title-sec .wrapper .btn-wrapper button{
+  padding: 1rem 3.5rem;
+  font-size: 1rem;
+  background-color: var(--primary);
+  color: white;
+  font-weight: bold;
+}

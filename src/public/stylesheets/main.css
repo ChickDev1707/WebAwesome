@@ -1,0 +1,20 @@
+@import url('./components/footer.css');
+@import url('./components/header.css');
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+button{
+  border: none;
+  cursor: pointer;
+  border-radius: .25rem;
+}
+a{
+  text-decoration: none;
+}
+

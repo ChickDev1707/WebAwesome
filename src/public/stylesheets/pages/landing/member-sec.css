@@ -1,0 +1,95 @@
+@import url('../../settings/variables.css');
+
+/* .member-sec*/
+.member-sec{
+  background-color: var(--background-light);
+  padding: 6rem 0;
+}
+.member-sec .member-card-container{
+  display: flex;
+  justify-content: space-around;
+}
+.member-sec .member-card-container .member-card{
+  border-radius: .5rem;
+  overflow: hidden;
+  width: 30%;
+}
+.member-card-container .member-card .top{
+  position: relative;
+  height: 12rem;
+}
+.member-card-container .member-card:nth-child(1) .top{
+  background-color: rgb(255, 245, 127);
+}
+.member-card-container .member-card:nth-child(2) .top{
+  background-color: rgb(192, 255, 160);
+}
+.member-card-container .member-card:nth-child(3) .top{
+  background-color: rgb(126, 213, 240);
+}
+.member-card-container .member-card .top .avatar{
+  position: absolute;
+  width: 8rem;
+  height: 8rem;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background-color: #333;
+  border-radius: 50%;
+  overflow: hidden;
+  border: .5rem solid white;
+}
+
+.member-card-container .member-card .top .avatar img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.member-card-container .member-card .body{
+  padding: 6rem 1rem 2rem;
+  background-color: white;
+}
+.member-card-container .member-card .body p{
+  font-size: 1.1rem;
+  text-align: justify;
+}
+.black-animated-background-btn{
+  position: relative;
+  margin: 1rem 0 2rem;
+  padding: .6rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 2rem;
+  color: white;
+  background-color: var(--primary);
+  overflow: hidden;
+  z-index: 0;
+}
+.black-animated-background-btn::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0;
+  left: 0;
+  top: 0;
+  background-color: var(--accent);
+  z-index: -1;
+  transition: .3s;
+}
+.black-animated-background-btn:hover::after{
+  height: 100%;
+}
+.member-card-container .member-card .body .social-media-item{
+  width: 2.8rem;
+  height: 2.8rem;
+  background-color: gainsboro;
+  text-align: center;
+  cursor: pointer;
+  margin: 0 .25rem;
+  line-height: 2.8rem;
+  border-radius: 50%;
+  font-size: 1.2rem;
+}
+.member-card-container .member-card .body .social-media-item:hover{
+  background-color: gray;
+  color: white;
+}

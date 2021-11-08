@@ -1,0 +1,85 @@
+@import url('../../settings/variables.css');
+
+.pro-sec{
+  height: 1200px;
+  padding: 8rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--text-color-primary);
+  color: white;
+}
+.pro-sec .header{
+  justify-content: center;
+  text-align: center;
+  font-size: var(--font-size-super-title);
+  font-weight: bold;
+}
+.pro-sec .header div{
+  margin-left: 10px;
+  padding: .75rem 1.5rem;
+  font-size: var(--font-size-small-title);
+  text-transform: uppercase;
+  background-color: var(--orange-mild);
+  border-radius: 2rem;
+  color: #333;
+}
+.pro-sec .card-container{
+  align-items: stretch;
+  justify-content: space-between;
+}
+.pro-sec .card-container .ps-card{
+  width: 32%;
+  border: 2px solid var(--text-color-header);
+  border-radius: .5rem;
+  padding: 3rem;
+}
+.pro-sec .card-container .ps-card h2{
+  font-size: 2rem;
+}
+.pro-sec .card-container .ps-card h2, .pro-sec .card-container .ps-card p{
+  margin: 0;
+}
+.pro-sec .card-container .ps-card p:nth-child(2){
+  font-size: var(--font-size-super-title);
+  margin-top: 2rem;
+  font-weight: bold;
+  color: var(--orange-mild);
+}
+.pro-sec .card-container .ps-card p:nth-child(3){
+  color: var(--text-color-header);
+}
+
+.pro-sec .feature-panel{
+  font-size: var(--font-size-small-title);
+  font-weight: bold;
+  color: var(--orange-mild);
+}
+.pro-sec .feature-panel p:last-child{
+  margin-top: 2rem;
+}
+.pro-sec .feature-panel p{
+  text-align: center;
+}
+.pro-sec .feature-panel p span{
+  padding: 0 1.2rem;
+}
+.pro-sec .feature-panel p span i{
+  margin-right: .75rem;
+  font-size: 1.5rem;
+}
+.pro-sec .btn-container{
+  width: 50%;
+  margin: 0 auto;
+}
+.pro-sec .btn-container button{
+  display: block;
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: var(--orange-mild);
+  color: #333;
+}
+/* pro sec */
+/* ------------------------------------------------------------- */

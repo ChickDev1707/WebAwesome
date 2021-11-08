@@ -1,0 +1,44 @@
+@import url('../settings/variables.css');
+
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  background-color: var(--secondary);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header a img{
+  height: 3rem;
+}
+
+header ul li{
+  display: inline-block;
+  font-size: 1.3rem;
+  padding: 0 .5rem;
+}
+header ul li a{
+  color: gray;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+header .header-btn-wrapper button{
+  padding: 1rem 3rem;
+  margin-left: 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+header .header-btn-wrapper button:first-of-type{
+  border: 1px solid var(--primary);
+  background-color: transparent;
+  color: white;
+}
+header .header-btn-wrapper button:last-of-type{
+  background-color: var(--primary);
+  color: white;
+}
+/* header */
+/* ------------------------------------------------------------- */

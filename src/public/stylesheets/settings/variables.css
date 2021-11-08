@@ -1,0 +1,10 @@
+
+:root{
+  --primary: rgb(52, 69, 229);
+  --secondary: rgb(24, 24, 36);
+  --accent: rgb(31, 30, 46);
+  /* theme */
+  --background-light: #DEF2F1;
+  
+  --text-color-primary: #333;
+}

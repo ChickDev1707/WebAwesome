@@ -1,0 +1,51 @@
+@import url('../../settings/variables.css');
+
+.dream-job-sec{
+  height: auto;
+  padding: 8rem 2rem;
+  background-color: white;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.dream-job-sec .text-container{
+  position: relative;
+  flex-grow: 1;
+  text-align: center;
+}
+.dream-job-sec .text-container:nth-of-type(2){
+  width: 25rem;
+}
+.dream-job-sec .text-container p{
+  margin: 0;
+}
+.dream-job-sec .text-container:nth-of-type(3) span{
+  color: var(--blue-primary);
+}
+
+.job-title-container p{
+  width: 100%;
+  position: absolute;
+  display: block;
+  opacity: 0;
+  animation: appear 10s infinite;
+}
+.job-title-container p:nth-child(2){
+  animation-delay: 2s;
+}
+.job-title-container p:nth-child(3){
+  animation-delay: 4s;
+}
+.job-title-container p:nth-child(4){
+  animation-delay: 6s;
+}
+.job-title-container p:nth-child(5){
+  animation-delay: 8s;
+}
+
+@keyframes appear{
+  0%{opacity: 0;}
+  10%{opacity: 1;}
+  20%{opacity: 0;}
+}
+/* dream job sec */
+/* ------------------------------------------------------------- */

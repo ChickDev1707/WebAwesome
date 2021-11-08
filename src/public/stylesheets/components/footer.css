@@ -1,0 +1,83 @@
+@import url('../settings/variables.css');
+
+footer{
+  background-color: var(--accent);
+  color: white;
+}
+footer a{
+  color: white;
+}
+footer>.container{
+  padding: 3rem 0;
+}
+footer .container-fluid{
+  background-color: var(--secondary);
+  padding: .75rem 0;
+  text-align: center;
+}
+footer ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer ul li:not(:first-child){
+  padding: .2rem 0;
+}
+footer ul li a{
+  display: block;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: rgb(179, 179, 179);
+  transition: .3s;
+}
+footer ul li a:hover:not(.footer-logo){
+  color: white;
+  transform: translate(8px);
+}
+footer .tag-header{
+  position: relative;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  padding-bottom: .5rem;
+  margin-bottom: .5rem;
+}
+footer .tag-header::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 3rem;
+  height: 2px;
+  background-color: var(--primary);
+}
+.contact-icon-container{
+  margin-top: 10px;
+  display: flex;
+}
+footer .footer-logo{
+  font-size: 2rem;
+  color: white;
+  padding-bottom: .5rem;
+  margin-bottom: .5rem;
+}
+footer .footer-logo:hover{
+  color: var(--primary);
+}
+footer .contact-icon-container div{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  line-height: 40px;
+  cursor: pointer;
+  text-align: center;
+  background-color: rgb(97, 97, 97);
+  transition: .3s;
+}
+footer .contact-icon-container div:hover{
+  background-color: white;
+  color: rgb(97, 97, 97);
+}
+footer .container-fluid small span{
+  color: gray;
+}

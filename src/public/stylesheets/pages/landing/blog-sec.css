@@ -1,0 +1,63 @@
+@import url('../../settings/variables.css');
+
+.blog-sec{
+  padding: 8rem 0;
+}
+.blog-sec .row:nth-child(2){
+  text-align: center;
+}
+.blog-sec .blog-item-container{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+.blog-sec .blog-item-container div{
+  width: 30%;
+}
+.blog-sec .blog-item-container .card-img-overlay{
+  width: 100%;
+  padding: 0;
+  text-align: left;
+  background-color: rgba(25, 25, 25, .4);
+  color: white;
+  overflow: hidden;
+}
+.blog-sec .blog-item-container .card-img-overlay .hidden-overlay-panel{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 1rem;
+  background-color: transparent;
+  transform: translateY(9.5rem);
+  height: 100%;
+  transition: .2s;
+}
+.blog-sec .blog-item-container .card-img-overlay:hover{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.blog-sec .blog-item-container .card-img-overlay:hover>.hidden-overlay-panel{
+  transform: translateY(0);
+  background-color: white;
+  color: var(--text-color-primary);
+}
+
+.blog-sec .blog-item-container .card-img-overlay .hidden-overlay-panel .d-flex{
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.blog-sec .blog-item-container .card-img-overlay .hidden-overlay-panel .d-flex p{
+  margin: 0;
+  font-weight: lighter;
+}
+.blog-item-container .author-tag{
+  margin-right: .5rem;
+  height: 1.35rem;
+  border-radius: .25rem;
+  text-align: center;
+  font-size: .75rem;
+
+  background: linear-gradient(to right, #ff4757, #ff7f50);
+}

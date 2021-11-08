@@ -1,0 +1,31 @@
+@import url('../../settings/variables.css');
+
+.statistic-sec{
+  display: flex;
+  background-color: white;
+  justify-content: stretch;
+}
+.statistic-sec .statistic-item{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+  border: 1px solid rgb(230, 230, 230);
+  padding: 2rem 0;
+}
+.statistic-sec .statistic-item .icon{
+  font-size: 4rem;
+  color: var(--blue-primary);
+}
+.statistic-sec .statistic-item .number{
+  font-size: 3rem;
+  font-weight: bold;
+  height: 4rem;
+}
+.statistic-sec .statistic-item p:last-child{
+  font-size: 1.5rem;
+  color: gray;
+}
+.statistic-sec .statistic-item:hover{
+  background-color: var(--background-light);
+}
