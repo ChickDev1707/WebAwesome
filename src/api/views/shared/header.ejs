@@ -1,16 +1,48 @@
 <header>
-	<a href="#"><img src="/public/assets/images/node-logo-white.png" alt=""></a>
+	<a href="/"><img src="/public/assets/images/node-logo-white.png" alt=""></a>
 	<div class="d-flex align-items-center">
 		<ul>
-			<li><a href="">Courses</a></li>
+			<li><a href="/courses">Courses</a></li>
 			<li><a href="">Code playground</a></li>
 			<li><a href="">Discuss</a></li>
-			<li><a href="">Blog</a></li>
+			<li><a href="/blogs">Blog</a></li>
 			<li><a href="">Get pro</a></li>
 		</ul>
 		<div class="header-btn-wrapper">
-			<button>Log in</button>
-			<button>Register</button>
+			<button id="loginBtn">Log in</button>
+			<button><a href="/sign-up">Register</a> </button>
 		</div>
 	</div>
+	<div class="logn_wrap">
+        <div class="layout" id="layout_login">
+
+        </div>
+        <div class="content_login" id="content_login">
+            <div class="login_header">
+                <a href="">Sing in</a>
+                <a href="">Get started free</a>
+                <button id="close_login"><i class="far fa-times-circle"></i></button>
+            </div>
+
+            <h4>Sign in to learn more</h4>
+            <div class="quick_login">
+                <button><i class="fab fa-google-plus-g"></i>Login with google</button>
+                <button><i class="fab fa-twitter"></i></button>
+            </div>
+            <span>Or</span>
+            <form action="">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="******">
+
+                </div>
+                <p>When click to sign up button, you agree with CodeLearn <a href="">terms and conditons of use</a></p>
+                <button type="submit" class="btn btn-primary">SIGN UP</button>
+            </form>
+        </div>
+    </div>
 </header>

@@ -1,0 +1,239 @@
+a {
+    color: black;
+}
+
+.overlay_profile {
+    width: 110%;
+    border-radius: 0 0 50% 50%;
+    background: #2d3846;
+    height: 300px;
+    position: relative;
+    left: -5%;
+}
+
+.overlay_profile .profile_info {
+    display: flex;
+    align-items: center;
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform:  translateX(-50%);
+    top: 50px;
+}
+
+.content_profile {
+    margin-bottom: 100px;
+}
+
+.overlay_profile .profile_info img {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.overlay_profile .profile_info .profile_info_detail p{
+ margin: 0;
+}
+
+.progress_part {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.progress_part button {
+    width: 100%;
+}
+
+.progress_part .progress_head {
+    display: flex;
+    align-items: center;
+}
+
+.progress_part .progress_head a {
+    display: block;
+    margin-left: 50px;
+    position: relative;
+    top: -3px;
+    color: rgb(0, 0, 196);
+}
+
+.progress_part ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 50px;
+}
+
+.progress_part ul li {
+    margin: 20px 0;
+}
+
+.progress_part ul li img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+
+.certificate_wrap,
+.achivement,
+.coach_wrap {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.certificate_wrap .certificate_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.certificate_wrap .certificate_head .move_slide i,
+.moveCoach_slide i{
+    padding: 0 10px;
+    cursor: pointer;
+    user-select: none;
+    transition: .3s;
+} 
+
+.certificate_wrap .certificate_head .move_slide i:hover,
+.moveCoach_slide i:hover {
+    font-size: 20px;
+    font-weight: bold
+}
+
+.certificate_head {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.certificate_slide {
+ overflow: hidden;
+ display: flex;
+ overflow-x: auto;
+ box-sizing: border-box;
+ width: 300x;
+}
+
+.certificate_slide::-webkit-scrollbar {
+    visibility: hidden;
+}
+
+.certificate_slide .certificate_item {
+    min-width: 100px;
+    margin: 0 5px;
+    position: relative;
+    transition: .3s;
+
+}
+
+.certificate_slide .certificate_item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.certificate_slide .certificate_item h6 {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.achivement h5,
+.coach_wrap .coach_head .head_content h5,
+.certificate_wrap .certificate_head h5,
+.progress_part .progress_head h5{
+    color: #314969;
+    font-weight: bold;
+}
+
+.achivement .medal {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.achivement .medal i {
+    font-size: 30px;
+    color: rgb(147, 147, 2);
+}
+
+
+.achivement .next_task {
+    display: flex;
+    margin: 20px 0;
+}
+
+.achivement .next_task i {
+    font-size: 50px;
+    margin-right: 10px;
+    color: #2D3846;
+}
+
+.achivement .next_task .next_task_content p {
+    margin: 0;
+}
+
+.achivement button {
+    width: 100%;
+}
+
+
+.coach_wrap .coach_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.coach_wrap .coach_head .head_content p {
+    font-size: 12px;
+}
+
+.coach_slide {
+    display: flex;
+    overflow-x: auto;
+}
+
+.coach_slide::-webkit-scrollbar {
+    visibility: hidden;
+}
+
+.coach_slide .coach_item {
+    background-color: #AED5F0;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 10px;
+    min-width: 250px;
+    position: relative;
+    transition: .5s;
+}
+
+.coach_item .coach_item_head {
+    display: flex;
+    align-items: centers;
+}
+
+.coach_item .coach_item_head i {
+    font-size: 50px;
+    color: tomato;
+    margin-right: 10px;
+}
+
+.coach_item .coach_item_head  .coach_item_head_cotent p {
+    font-size: 12px;
+    margin: 0;
+}
+
+.coach_item .coach_item_head  .coach_item_head_cotent p:first-child {
+    font-weight: bold;
+}
+
+.coach_item > button {
+    width: 100%;
+}
+
+.coach_item .coach_item_btn {
+    text-align: center;
+    margin: 20px 0;
+}

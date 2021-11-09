@@ -1,17 +1,30 @@
 
 const express = require('express')
 const router = express.Router()
+const expressLayout = require('express-ejs-layouts')
 
 const Posts = require('../data.js').posts
 
 // index route
-router.get('/', (req, res)=>{
+router.get('/', expressLayout, (req, res)=>{
   res.render('pages/index.ejs')
 })
 
+//courses router
+router.get('/courses/python/lesson1', (req, res)=>{
+  res.render('pages/course/coursePythonLesson1.ejs')
+})
 
-// posts route
-router.get('/all-post', (req, res)=>{
+router.get('/courses/python',expressLayout, (req, res)=>{
+  res.render('pages/course/coursePython.ejs')
+})
+
+router.get('/courses',expressLayout, (req, res)=>{
+  res.render('pages/course/coursesList.ejs')
+})
+
+//blog router
+router.get('/blogs/all-post',expressLayout, (req, res)=>{
   let currentPage = parseInt(req.query.page) ;
   const perPage = 6;
   let totalPost = Posts.length;
@@ -23,18 +36,30 @@ router.get('/all-post', (req, res)=>{
   
   let pagination = [currentPage, totalPage];
 
-  res.render('pages/allPost.ejs',{result,pagination})
+  res.render('pages/blog/allPost.ejs',{result,pagination})
 })
 
 
+router.get('/blogs', expressLayout, (req, res)=>{
+  res.render('pages/blog/index.ejs')
+})
 
-router.get('/posts/:id', (req, res)=>{
+//sign up
+
+router.get('/sign-up', (req, res)=>{
+  res.render('pages/signUp/signUp.ejs')
+})
+
+// posts route
+
+
+router.get('/posts/:id',expressLayout, (req, res)=>{
   let postDir = 'post-'+ req.params.id
   res.render('pages/posts/' + postDir)
 })
 
 // search route
-router.get('/search', (req, res)=>{
+router.get('/search',expressLayout, (req, res)=>{
   let result = [];
   if(req.query.searchKey!= undefined){
     let key = req.query.searchKey.toLowerCase()
@@ -47,7 +72,7 @@ router.get('/search', (req, res)=>{
           && checkCategory
     })
   }
-  res.render('pages/search.ejs', {result})
+  res.render('pages/search.ejs', expressLayout, {result})
 })  
 
 function isSooner(target, days){

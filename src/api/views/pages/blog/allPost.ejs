@@ -1,18 +1,23 @@
 <%- contentFor("head") %> 
-<title>Tất cả bài viết</title>
+<title>Blog - tất cả bài viết</title>
+<link rel="stylesheet" href="/public/stylesheets/pages/blog/allPost.css">
+<link rel="stylesheet" href="/public/stylesheets/pages/blog/style.css">
+
+
+
+
 
 <%- contentFor("body") %> 
-
 <div class="row" style="margin-top: 20px;">
     <div class="container home_page">
         <div class="row">
 
             <div class="col-sm-8" id="listpost">
                 <% if(result.length == 0){ %>
-                    <%- include('../partials/no-result-item.ejs') %> 
+                    <%- include('../../partials/no-result-item.ejs') %> 
                   <% }else{ %>
                     <% result.forEach((post)=>{ %>
-                      <%- include('../partials/all-post-item.ejs', {post}) %> 
+                      <%- include('../../partials/all-post-item.ejs', {post}) %> 
                     <% }) %> 
                   <% } %> 
             </div>
@@ -51,7 +56,7 @@
                             <li>
                                 <a href="">
                                     <div class="topview_img">
-                                        <img src="../../../public/assets/images/react5.jpg" alt="">
+                                        <img src="/public/assets/images/blog/react5.jpg" alt="">
                                     </div>
                                     <div class="topview_content">
                                         <h6>React-DOM là gì? Tại sao cần React-DOM?</h6>
@@ -67,7 +72,7 @@
                             <li>
                                 <a href="">
                                     <div class="topview_img">
-                                        <img src="../../../public/assets/images/js-item2.jpg" alt="">
+                                        <img src="/public/assets/images/blog/js-item2.jpg" alt="">
                                     </div>
                                     <div class="topview_content">
                                         <h6>React-DOM là gì? Tại sao cần React-DOM?</h6>
@@ -83,7 +88,7 @@
                             <li>
                                 <a href="">
                                     <div class="topview_img">
-                                        <img src="../../../public/assets/images/js-item1.jpg" alt="">
+                                        <img src="/public/assets/images/blog/js-item1.jpg" alt="">
                                     </div>
                                     <div class="topview_content">
                                         <h6>React-DOM là gì? Tại sao cần React-DOM?</h6>
@@ -99,7 +104,7 @@
                             <li>
                                 <a href="">
                                     <div class="topview_img">
-                                        <img src="../../../public/assets/images/htmlcss1.jpg" alt="">
+                                        <img src="/public/assets/images/blog/htmlcss1.jpg" alt="">
                                     </div>
                                     <div class="topview_content">
                                         <h6>React-DOM là gì? Tại sao cần React-DOM?</h6>
@@ -125,20 +130,20 @@
                        <% if (pagination[0] == 1){ %>
                         <li class="page-item disabled"  ><a class="page-link" disabled href="">Previous</a></li>
                         <%   } else { %>
-                        <li class="page-item"><a class="page-link" href="/all-post?page=<%- pagination[0] - 1 %>">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="/blogs/all-post?page=<%- pagination[0] - 1 %>">Previous</a></li>
                         <%  } %>
                         
                         <% for(let i = 1; i <= pagination[1]; i++) {%>
                         <% if (i == pagination[0]) { %>
-                            <li class="page-item active"><a class="page-link" href="/all-post?page=<%- i %>">   <%- i %></a></li>
+                            <li class="page-item active"><a class="page-link" href="/blogs/all-post?page=<%- i %>">   <%- i %></a></li>
                         <% } else { %>
-                        <li class="page-item"><a class="page-link" href="/all-post?page=<%- i %>">   <%- i %></a></li>
+                        <li class="page-item"><a class="page-link" href="/blogs/all-post?page=<%- i %>">   <%- i %></a></li>
                         <%  } %>
                         <% } %>
                         <% if (pagination[0] == pagination[1] ) { %>
                         <li class="page-item disabled"><a class="page-link" href="">Next</a></li>
                         <% } else { %>
-                        <li class="page-item"><a class="page-link" href="/all-post?page=<%- pagination[0] + 1 %>">Next</a></li>
+                        <li class="page-item"><a class="page-link" href="/blogs/all-post?page=<%- pagination[0] + 1 %>">Next</a></li>
                         <% } %>
                         
                     </ul>
@@ -147,7 +152,3 @@
         </div>
     </div>
 </div>
-
-<!-- <li class="page-item"><a class="page-link" href="/all-post?page=2">2</a></li>
-<li class="page-item"><a class="page-link" href="/all-post?page=3">3</a></li>
-<li class="page-item"><a class="page-link" href="/all-post?page=4">4</a></li> -->

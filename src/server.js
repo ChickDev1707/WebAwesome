@@ -17,11 +17,11 @@ const authRoute = require('./api/routes/auth.js')
 const port = 3000
 const Users = require('./api/data').users
 
-passportConfig.init(
-  passport, 
-  email => Users.find(user=> user.email == email),
-  id => Users.find(user => user.id = id)
-)
+// passportConfig.init(
+//   passport, 
+//   email => Users.find(user=> user.email == email),
+//   id => Users.find(user => user.id = id)
+// )
 app.use(flash())
 app.use(session({
   secret: "REtVxemV2Q25",
@@ -38,7 +38,7 @@ app.set('views', __dirname+ '/api/views')
 app.set('layout', 'layouts/layout')
 
 // utilities
-app.use(expressLayout)
+// app.use(expressLayout)
 app.use(express.static('public'))
 app.use('/public', express.static(__dirname+ '/public'))
 

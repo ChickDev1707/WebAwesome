@@ -1,0 +1,146 @@
+@import url('../../settings/variables.css');
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+
+.su_wrap {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#particles-js {
+    background:url(/public/assets/images/signup/su_bg.jpg);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-size: contain;
+}
+
+.content_signup {
+    position: absolute;
+    display: flex;
+    background-color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 670px;
+}
+
+.content_signup h4 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: var(--secondary);
+}
+
+.content_signup button {
+    width: 100%;
+}
+
+.content_signup .image {
+    height: 100%;
+}
+
+.content_signup .image img {
+    height: 100%;
+}
+
+.sign_up-content {
+    box-sizing: border-box;
+    padding: 20px 30px;
+    width: 400px;
+}
+
+.sign_up-content input {
+    border: none;
+    border-bottom: 1px solid var(--secondary);
+    border-radius: 0;
+}
+
+#or {
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+}
+
+#or::before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 1px;
+    background-color: gray;
+    top: 12px;
+    left: 2px;
+}
+
+#or::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 1px;
+    background-color: gray;
+    top: 12px;
+    right: 2px;
+}
+
+#text {
+    text-align: center;
+    font-size: 12px;
+}
+
+.quick_login {
+    text-align: center;
+}
+
+.quick_login i {
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.quick_login i:first-child,
+.quick_login i:last-child{
+    color: #1771E6;
+}
+
+.backTohome {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 10;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+.backTohome:hover {
+    background-color: var(--secondary);
+    text-decoration: none;
+    color: white;
+    border: none;
+}
+
+.backTohome i {
+    margin-right: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+#term {
+    font-size: 12px;
+}
+
+
+
+ 

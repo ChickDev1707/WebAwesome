@@ -1,0 +1,84 @@
+@import url('../../settings/variables.css');
+
+.overlay_clip {
+    /* height: 200px;
+    background-color: #1F1E28;
+    clip-path: ellipse(50% 80% at 50% 1%); */
+
+    width: 110%;
+    border-radius: 0 0 50% 50%;
+    background:  var(--secondary);
+    height: 150px;
+    position: relative;
+    left: -5%;
+}
+
+.course_header h3 {
+    position: relative;
+    background-color: white;
+    box-shadow: 0 0 5px gray;
+    width: 500px;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 24px;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cart_course {
+    position: relative;
+    height: 300px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05), inset -5px -5px 5px rgba(255, 255, 255, 0.5), 5px 5px 5px rgba(0, 0, 0, 0.05), -5px -5px 5px rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.cart_course .box_courses {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: white;
+    transition: .3s;
+}
+
+.cart_course .box_courses .content_courses {
+    padding: 30px;
+    text-align: center;
+}
+
+.cart_course .box_courses .content_courses .courses_img {
+    height: 108px;
+    margin-bottom: 10px;
+}
+
+.cart_course .box_courses .content_courses .courses_img img {
+    width: 65%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.cart_course .box_courses .content_courses h6 {
+    font-weight: 900;
+    font-family: monospace;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.cart_course .box_courses .content_courses p {
+    font-size: 14px;
+    color: black;
+}
+
+.cart_course:hover .box_courses {
+    transform: translateY(-8%);
+    cursor: pointer;
+    background: linear-gradient(45deg, #72B749, #44ACE4);
+}

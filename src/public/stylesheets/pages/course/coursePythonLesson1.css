@@ -1,0 +1,249 @@
+.lesson_footer {
+    height: 100px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 10px 2px 10px gray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.lesson_footer button {
+    padding: 10px 30px;
+}
+
+.lesson_footer button:first-child {
+    background-color: #E2E6EA;
+}
+
+.lesson_footer button:first-child:hover {
+    background-color: #bfbfbf;
+}
+
+.lesson_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.sidebar_comment {
+    position: fixed;
+    width: 360px;
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    box-shadow: 5px 0px 10px gray;
+    background-color: white;
+    transition: .3s ease-in;
+}
+
+.sidebar_comment.display {
+    right: 0;
+}
+
+.lesson_header {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.lesson_header p,
+.lesson_header a{
+    font-size: 16px;
+    font-weight: bold;
+    color: gray;
+}
+
+.lesson_header p:hover,
+.lesson_header a:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.lesson_header p i,
+.lesson_header a i {
+    margin-right: 8px;
+    font-size: 13px;
+}
+
+.lesson_header .lesson_tap {
+    display: flex;
+}
+
+.lesson_header .lesson_tap span {
+    width: 40px;
+    height: 10px;
+    background-color: #40BF9C;
+    display: block;
+    margin-right: 8px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.lesson_header .lesson_tap span.current {
+    background-color: #1c6a54;
+}
+
+.lesson_header .lesson_tap span:hover {
+    background-color: #1c6a54;
+}
+
+
+.sidebar_comment {
+    padding: 0 20px;
+}
+
+.sidebar_comment .comment_head {
+    padding-bottom: 10px;
+}
+
+.sidebar_comment .comment_head .comment_head1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 10px 0;
+}
+
+.sidebar_comment .comment_head .comment_head1 p {
+    font-size: 16px;
+    font-weight: bold;
+    color: gray;
+}
+
+.sidebar_comment .comment_head .comment_head1 p:first-child {
+    cursor: pointer;
+}
+
+.sidebar_comment .comment_head .comment_head1 p:first-child i {
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.sidebar_comment .comment_head form textarea {
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: #EAF0F3;
+    border-radius: 8px;
+    resize: none;
+}
+
+.sidebar_comment .comment_head form button {
+    padding: 5px 20px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.sidebar_comment .comment_body {
+    overflow-y: scroll;
+    padding-top: 20px;
+    height: 500px;
+}
+
+.sidebar_comment .comment_body .comment_item {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.comment_item .comment_image {
+    flex: 0 0 10%;
+    /* margin-right: 10px; */
+}
+
+.comment_item .comment_image img {
+    width: 100%;
+}
+
+.comment_item .comment_content {
+    padding: 0 5px;
+}
+
+.comment_item .comment_content .comment_content_top {
+    background-color: #EAF0F3;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.comment_item .comment_content .comment_content_top h5 {
+    margin: 0;
+    font-size: 14px;
+}
+
+.comment_item .comment_content .comment_content_top p {
+    font-size: 13px;
+    margin: 0;
+}
+
+.comment_item .comment_content .comment_content_bottom {
+    display: flex;
+    justify-content: space-around;
+}
+
+.comment_item .comment_content .comment_content_bottom p {
+    font-size: 12px;
+}
+
+.lesson_content {
+    height: 500px;
+    margin: 0 auto;
+    width: 500px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: left;
+    overflow-x: scroll;
+}
+
+.lesson_content::-webkit-scrollbar {
+    visibility: hidden;
+}
+
+.lesson_content .lesson_content1 {
+    min-width: 480px;
+    margin: 0 10px;
+    position: relative;
+    left: 0;
+}
+
+.lesson_content .lesson_content1 h4 {
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.lesson_content .lesson_content1 .try_code {
+    background-color: black;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.lesson_content .lesson_content1 .try_code p {
+    color: rgb(160, 160, 160);
+    margin-bottom: 5px;
+}
+
+.lesson_content .lesson_content1 .try_code button {
+    width: 100%;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.lesson_content .lesson_content1 .warning {
+    display: flex;
+    align-items: center;
+    background-color: #F6E9C8;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.lesson_content .lesson_content1 .warning i {
+    position: relative;
+    top: -5px;
+    margin-right: 10px;
+    font-size: 25px;
+    color: #ECAA00;
+}

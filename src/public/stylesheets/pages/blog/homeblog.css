@@ -1,0 +1,302 @@
+.wrap {
+    margin-top: 30px;
+}
+
+.header {
+    margin: 20px 0;
+}
+
+.header h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.navigation {
+    margin: 50px 0;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation ul li a {
+    padding: 15px 50px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.navigation ul li a:hover {
+    text-decoration: none;
+}
+
+.navigation ul li:nth-child(1) a {
+    background-color: #72B749;
+}
+
+.navigation ul li:nth-child(1) a:hover {
+    background-color: #508233;
+}
+
+.navigation ul li:nth-child(2) a {
+    background-color: #57B99E;
+}
+
+.navigation ul li:nth-child(2) a:hover {
+    background-color: #43917b;
+}
+
+.navigation ul li:nth-child(3) a {
+    background-color: #DF6C38;
+}
+
+.navigation ul li:nth-child(3) a:hover {
+    background-color: #b85a2f;
+}
+
+.navigation ul li:nth-child(4) a {
+    background-color: #44ACE4;
+}
+
+.navigation ul li:nth-child(4) a:hover {
+    background-color: #3485b1;
+}
+
+.navigation ul li:nth-child(5) a {
+    background-color: #EFA265;
+}
+
+.navigation ul li:nth-child(5) a:hover {
+    background-color: #d08f5a;
+}
+
+
+/* phần post */
+
+.list-post {
+    margin-bottom: 10px;
+}
+
+.eachpost {
+    box-shadow: 0px 0px 5px rgb(221, 218, 218);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 40px;
+    transition: 0.3s;
+}
+
+.post_item .eachpost:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: 0px 0px 5px rgb(160, 160, 160);
+}
+
+.post_item .eachpost .post_item-image {
+    height: 180px;
+    overflow: hidden;
+}
+
+.post_item .eachpost .post_item-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.post_item .eachpost .post_item-content .post_item-conent-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.post_item .eachpost .post_item-content .post_item-conent-header p {
+    font-size: 13px;
+    margin: 0;
+}
+
+.post_item.cd .eachpost .post_item-content .post_item-conent-header p:last-child {
+    font-weight: bold;
+    color: #DF6C38;
+}
+
+.post_item.ltc .eachpost .post_item-content .post_item-conent-header p:last-child {
+    font-weight: bold;
+    color: #57B99E;
+}
+
+.post_item.is .eachpost .post_item-content .post_item-conent-header p:last-child {
+    font-weight: bold;
+    color: #44ACE4;
+}
+
+.post_item.cn .eachpost .post_item-content .post_item-conent-header p:last-child {
+    font-weight: bold;
+    color: #EFA265;
+}
+
+.post_item .eachpost .post_item-content .post_item-content-body {
+    text-align: center;
+    padding: 10px;
+}
+
+.post_item .eachpost .post_item-content .post_item-content-body h5 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    line-height: 20px;
+    height: 40px;
+    color: rgb(57, 57, 57);
+}
+
+.post_item .eachpost .post_item-content .post_item-content-body p {
+    font-size: 13px;
+    color: rgb(121, 121, 121);
+    line-height: 15px;
+    height: 30px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.post_item .eachpost .post_item-content .post_item-content-footer {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.post_item .eachpost .post_item-content .post_item-content-footer span {
+    text-align: center;
+    padding: 10px;
+    flex: 0 0 33%;
+    display: flex;
+    align-items: center;
+}
+
+.post_item.ltc .eachpost .post_item-content .post_item-content-footer span {
+    border-right: 1px solid #50ac94;
+}
+
+.post_item.cd .eachpost .post_item-content .post_item-content-footer span {
+    border-right: 1px solid #cc6433;
+}
+
+.post_item.is .eachpost .post_item-content .post_item-content-footer span {
+    border-right: 1px solid #3b93c2;
+}
+
+.post_item.cn .eachpost .post_item-content .post_item-content-footer span {
+    border-right: 1px solid #ca8f5f;
+}
+
+.post_item .eachpost .post_item-content .post_item-content-footer span p:first-child {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+.post_item .eachpost .post_item-content .post_item-content-footer span p:last-child {
+    font-size: 12px;
+    margin: 0;
+}
+
+.post_item.ltc .eachpost .post_item-content .post_item-content-footer {
+    background-color: #57B99E;
+}
+
+.post_item.cd .eachpost .post_item-content .post_item-content-footer {
+    background-color: #DF6C38;
+}
+
+.post_item.is .eachpost .post_item-content .post_item-content-footer {
+    background-color: #44ACE4;
+}
+
+.post_item.cn .eachpost .post_item-content .post_item-content-footer {
+    background-color: #EFA265;
+}
+
+
+/* end phần post */
+
+.view-all-post {
+    padding: 10px;
+}
+
+.view-all-post .btn {
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.box-slide {
+    height: 400px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.box-slide .clip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+
+.box-slide .clip.clip1 {
+    background: url(/public/assets/images/blog/sl1.png);
+    background-size: cover;
+    clip-path: polygon(0 0, 50% 0, 20% 100%, 0% 100%);
+}
+
+.box-slide .clip.clip2 {
+    clip-path: polygon(50% 0, 100% 0, 55% 100%, 20% 100%);
+    background: url(/public/assets/images/blog/sl2.jpg);
+    background-size: contain;
+}
+
+.box-slide .clip.clip3 {
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 55% 100%);
+    background: url(/public/assets/images/blog/sl3.png);
+    background-size: contain;
+}
+
+.box-slide:hover .clip {
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+
+.box-slide .clip:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.box-slide .clip .content {
+    position: absolute;
+    bottom: -100%;
+    left: 5px;
+    width: 70%;
+    padding: 20px;
+    background-color: white;
+    opacity: 0;
+    transition: .5s;
+    border-radius: 10px;
+}
+
+.box-slide .clip:hover .content {
+    bottom: 5px;
+    opacity: 1;
+}
+
+#see_all_post {
+    width: 200px;
+}
