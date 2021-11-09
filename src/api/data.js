@@ -1,4 +1,4 @@
-
+const Users= []
 const Posts = [
   {
     id: 1,
@@ -202,4 +202,7 @@ const Posts = [
   },
 ]
 
-module.exports = Posts
+module.exports = {
+  posts: Posts,
+  users: Users
+}

@@ -2,12 +2,13 @@
 const express = require('express')
 const router = express.Router()
 
-const Posts = require('../data.js')
+const Posts = require('../data.js').posts
 
 // index route
 router.get('/', (req, res)=>{
   res.render('pages/index.ejs')
 })
+
 
 // posts route
 router.get('/all-post', (req, res)=>{
