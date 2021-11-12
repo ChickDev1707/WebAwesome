@@ -1,0 +1,75 @@
+@import url('../../settings/variables.css');
+.discussion-row{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.discussion-row .col-left{
+  grid-column: 1/10;
+}
+.discussion-row .col-right{
+  grid-column: 10/13;
+}
+.discussion-form{
+  margin-right: 2rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.discussion-form .top-bar{
+  background-color: var(--accent);
+  color: white;
+}
+.top-bar, .main-form{
+  padding: 1rem 2rem;
+}
+.main-form{
+  padding-bottom: 3rem;
+}
+.main-form .row{
+  margin-bottom: 1rem;
+}
+.main-form .row .col{
+  display: flex;
+  flex-direction: column;
+}
+.main-form .row .col label{
+  font-weight: bold;
+  color: #333;
+}
+.main-form .form-btn{
+  border: none;
+  padding: .4rem 1.5rem;
+  text-decoration: none;
+  color:gray;
+  text-transform: uppercase;
+  margin-left: 1rem;
+  border-radius: .25rem;
+  font-weight: bold;
+  background-color: white;
+}
+.main-form .form-btn:nth-child(2){
+  background-color: var(--primary);
+  color: white;
+}
+.main-form .row .col input, textarea{
+  padding: .5rem 1rem;
+  font-size: .9rem;
+  outline: none;
+  border: none;
+  background-color: rgb(241, 241, 241);
+  border-radius: .25rem;
+}
+
+.discussion-row .col-right .trending-box{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 1rem 2rem;
+}
+.col-right .trending-box ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.col-right .trending-box ul li a{
+  text-decoration: none;
+  color: #333;
+}

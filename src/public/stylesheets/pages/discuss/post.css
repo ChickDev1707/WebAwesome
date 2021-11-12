@@ -1,0 +1,87 @@
+@import url('../../settings/variables.css');
+
+.discussion-row{
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.discussion-row .col-left{
+  grid-column: 1/10;
+}
+.discussion-row .col-right{
+  grid-column: 10/13;
+}
+.discussion-section{
+  margin-right: 2rem;
+}
+.discuss-content-wrapper{
+  padding: 1rem;
+}
+
+.avatar{
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background-color: var(--accent);
+}
+.tag-container .tag{
+  cursor: pointer;
+  padding: .05rem .5rem;
+  margin-right: .5rem;
+  border: 1px solid var(--primary);
+  font-weight: bold;
+  color: var(--primary);
+  font-size: .7rem;
+  border-radius: .8rem;
+}
+
+.discussion-row .col-right .trending-box{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 1rem 2rem;
+}
+.col-right .trending-box ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.col-right .trending-box ul li a{
+  text-decoration: none;
+  color: #333;
+}
+.user-bar{
+  align-items: center;
+}
+.user-bar div:first-child{
+  margin-right: 1rem;
+}
+.user-bar p{
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+.vote-widget{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: stretch;
+  font-size: 1.2rem;
+}
+.vote-widget p{
+  margin: 0;
+}
+.vote-widget button{
+  padding: 0 1rem;
+  background-color: transparent;
+  border: none;
+}
+
+.answer-section{
+  margin-top: 2rem;
+}
+.answer-section .top-bar{
+  margin: 1rem 0;
+}
+.answer-section .top-bar p a{
+  text-decoration: none;
+  text-transform: uppercase;
+}

@@ -7,20 +7,37 @@ const Posts = require('../data.js').posts
 
 // index route
 router.get('/', expressLayout, (req, res)=>{
-  res.render('pages/index.ejs')
+  res.render('pages/index.ejs', {auth: req.isAuthenticated()})
 })
 
+router.get('/home', expressLayout, (req, res)=>{
+  res.render('pages/home.ejs', {auth: req.isAuthenticated()})
+})
 //courses router
 router.get('/courses/python/lesson1', (req, res)=>{
-  res.render('pages/course/coursePythonLesson1.ejs')
+  res.render('pages/course/coursePythonLesson1.ejs', {auth: req.isAuthenticated()})
 })
 
 router.get('/courses/python',expressLayout, (req, res)=>{
-  res.render('pages/course/coursePython.ejs')
+  res.render('pages/course/coursePython.ejs', {auth: req.isAuthenticated()})
 })
 
 router.get('/courses',expressLayout, (req, res)=>{
-  res.render('pages/course/coursesList.ejs')
+  res.render('pages/course/coursesList.ejs', {auth: req.isAuthenticated()})
+})
+
+// discussion
+router.get('/discusses', expressLayout, (req, res)=>{
+  res.render('pages/discuss/index.ejs', {auth: req.isAuthenticated()})
+
+})
+router.get('/discusses/post', expressLayout, (req, res)=>{
+  res.render('pages/discuss/post.ejs', {auth: req.isAuthenticated()})
+
+})
+router.get('/discusses/new', expressLayout, (req, res)=>{
+  res.render('pages/discuss/new.ejs', {auth: req.isAuthenticated()})
+
 })
 
 //blog router
@@ -36,18 +53,12 @@ router.get('/blogs/all-post',expressLayout, (req, res)=>{
   
   let pagination = [currentPage, totalPage];
 
-  res.render('pages/blog/allPost.ejs',{result,pagination})
+  res.render('pages/blog/allPost.ejs',{result,pagination, auth: req.isAuthenticated()})
 })
 
 
 router.get('/blogs', expressLayout, (req, res)=>{
-  res.render('pages/blog/index.ejs')
-})
-
-//sign up
-
-router.get('/sign-up', (req, res)=>{
-  res.render('pages/signUp/signUp.ejs')
+  res.render('pages/blog/index.ejs', {auth: req.isAuthenticated()})
 })
 
 // posts route
@@ -55,7 +66,7 @@ router.get('/sign-up', (req, res)=>{
 
 router.get('/posts/:id',expressLayout, (req, res)=>{
   let postDir = 'post-'+ req.params.id
-  res.render('pages/posts/' + postDir)
+  res.render('pages/posts/' + postDir, {auth: req.isAuthenticated()})
 })
 
 // search route
@@ -72,7 +83,7 @@ router.get('/search',expressLayout, (req, res)=>{
           && checkCategory
     })
   }
-  res.render('pages/search.ejs', expressLayout, {result})
+  res.render('pages/search.ejs', expressLayout, {result, auth: req.isAuthenticated()})
 })  
 
 function isSooner(target, days){

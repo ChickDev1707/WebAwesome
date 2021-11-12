@@ -1,0 +1,26 @@
+<header>
+	<a href="/"><img src="/public/assets/images/node-logo-white.png" alt=""></a>
+	<div class="d-flex align-items-center">
+		<ul>
+			<li><a href="/courses">Courses</a></li>
+			<li><a href="">Code playground</a></li>
+			<li><a href="/discusses">Discuss</a></li>
+			<li><a href="/blogs">Blog</a></li>
+			<li><a href="">Get pro</a></li>
+		</ul>
+		<div class="header-btn-wrapper">
+			<div class="dropdown header-user-control-icon-wrapper">
+				<button type="button" id="header-user-control-icon" data-bs-toggle="dropdown" aria-expanded="false"></button>
+				<ul class="dropdown-menu" aria-labelledby="header-user-control-icon">
+					<li><a href="#">User profile</a></li>
+					<hr>
+					<li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+					<li><a href="#"><i class="fas fa-question-circle"></i> Help</a></li>
+					<li><form id="logout-form" action="/auth/logout?_method=delete" method="POST">
+						<a href="javascript:{}" onclick="document.getElementById('logout-form').submit(); return false;"><i class="fas fa-sign-out-alt"></i> Log out</a></a>
+					</form></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>

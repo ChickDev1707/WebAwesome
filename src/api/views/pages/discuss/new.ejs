@@ -1,0 +1,57 @@
+<%- contentFor('head') %> 
+<title>new discuss</title>
+<link rel="stylesheet" href="/public/stylesheets/pages/discuss/new.css">
+<%- contentFor('body') %> 
+<div class="container">
+  <h1>Create discussion</h1>
+  <div class="container-fluid">
+    <div class="discussion-row">
+      <div class="col-left discussion-form">
+        <div class="top-bar ">
+          <h2>discussion form</h2>
+        </div>
+        <form action="" class="container-fluid main-form">
+          <div class="row">
+            <div class="col">
+              <label for="">Title</label>
+              <input type="text" placeholder="Enter your title">
+            </div>
+            <div class="col">
+              <label for="">Description</label>
+              <input type="text" placeholder="Enter your description">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <label for="">Content</label>
+              <textarea name="" id="" cols="30" rows="10" placeholder="Enter your tags"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <label for="">Tags</label>
+              <input type="text" placeholder="Enter your tags">
+            </div>
+          </div>
+          <div class="d-flex justify-content-end">
+            <a class="form-btn" href="#">cancel</a>
+            <button class="form-btn" type="submit">Post</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-right">
+        <div class="trending-box">
+          <h3>Trending</h3>
+          <div class="hot-posts-container">
+            <ul>
+              <li><a href="#"><i class="far fa-clone"></i> Javascript or python</a></li>
+              <li><a href="#"><i class="far fa-clone"></i> promise vs callback</a></li>
+              <li><a href="#"><i class="far fa-clone"></i> What is event loop</a></li>
+              <li><a href="#"><i class="far fa-clone"></i> The best programing language in the world</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

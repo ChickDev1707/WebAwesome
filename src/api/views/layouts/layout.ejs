@@ -17,7 +17,11 @@
 </head>
 <body>
   <div class="app-container">
-    <%- include('../shared/header.ejs'); %> 
+    <% if(!auth){ %>
+      <%- include('../shared/header.ejs'); %> 
+    <% }else{ %>
+      <%- include('../shared/user-header.ejs'); %> 
+    <% } %> 
     <%- body %> 
     <%- include('../shared/footer.ejs'); %> 
   </div>

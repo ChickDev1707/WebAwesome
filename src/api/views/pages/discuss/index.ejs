@@ -1,0 +1,72 @@
+<%- contentFor('head') %> 
+<link rel="stylesheet" href="/public/stylesheets/pages/discuss/all.css">
+<title>discuss</title>
+<%- contentFor('body') %> 
+<div class="container">
+  <h1>Discussion</h1>
+  <div class="container-fluid" id="main">
+    <div class="discussion-row">
+      <div class="col-left discussion-container">
+        <div class="top-bar bg-light">
+          <h2>All discusstion</h2>
+          <div class="d-flex align-items-center justify-content-between">
+            <select name="" id="">
+              <option value="">Newest</option>
+              <option value="">most votes</option>
+              <option value="">most comments</option>
+            </select>
+            <div class="search-bar">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="discussion name" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="discussion-posts-container">
+          <% for(let i = 0; i< 20; i++){ %>
+            <div class="discussion container-fluid">
+              <div class="row">
+                <div class="col-1">
+                  <div class="avatar"></div>
+                </div>
+                <div class="col-9">
+                  <h6><a href="/discusses/post">Title</a></h6>
+                  <p><i class="fas fa-calendar-alt"></i> date</p>
+                  <div class="tag-container d-flex justify-content-start">
+                    <div class="tag">how to</div>
+                    <div class="tag">what</div>
+                    <div class="tag">why</div>
+                  </div>
+                  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+                </div>
+                <div class="col-2 count-box">
+                  <p><i class="far fa-comments"></i> 30 coms</p>
+                  <p><i class="far fa-thumbs-up"></i> 200 likes</p>
+                </div>
+              </div>
+            </div>
+          <% } %> 
+        </div>
+      </div>
+      <div class="col-right">
+        <div>
+          <form action="/discusses/new" method="GET">
+            <button id="new-discuss-btn" type="submit">new discussion</button>
+          </form>
+        </div>
+        <div class="trending-box">
+          <h3>Trending</h3>
+          <div class="hot-posts-container">
+            <ul>
+              <li><a href="#"><i class="far fa-clone"></i> Javascript or python</a></li>
+              <li><a href="#"><i class="far fa-clone"></i> promise vs callback</a></li>
+              <li><a href="#"><i class="far fa-clone"></i> What is event loop</a></li>
+              <li><a href="#"><i class="far fa-clone"></i> The best programing language in the world</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+</div>

@@ -1,4 +1,6 @@
 const express = require('express')
+const Users = require('../data').users
+const bcrypt = require('bcrypt')
 
 module.exports = function(passport){
   const router = express.Router()
@@ -11,28 +13,26 @@ module.exports = function(passport){
     failureRedirect: '/login',
     failureFlash: true
   }))
-  
-  router.get('/register', checkNotAuthenticated, (req , res)=>{
-    res.render('register.ejs')
+  //sign up
+  router.get('/sign-up', (req, res)=>{
+    res.render('pages/signUp/signUp.ejs')
   })
-  router.post('/register', checkNotAuthenticated, async (req , res)=>{
+  router.post('/sign-up', checkNotAuthenticated, async (req , res)=>{
     try{
       const hashedPassword = await bcrypt.hash(req.body.password, 10)
-      users.push({
+      Users.push({
         id: Date.now().toString(),
         name: req.body.username,
         email: req.body.email,
         password: hashedPassword
       })
-      console.log(users)
-      res.redirect('/login')
     }catch(error){
-      res.redirect('/register')
+      res.redirect('/auth/sign-up')
     }
   })
   router.delete('/logout', (req, res)=>{
     req.logOut()
-    res.redirect('/login')
+    res.redirect('/')
   })
   
   

@@ -4,13 +4,13 @@
 		<ul>
 			<li><a href="/courses">Courses</a></li>
 			<li><a href="">Code playground</a></li>
-			<li><a href="">Discuss</a></li>
+			<li><a href="/discusses">Discuss</a></li>
 			<li><a href="/blogs">Blog</a></li>
 			<li><a href="">Get pro</a></li>
 		</ul>
 		<div class="header-btn-wrapper">
 			<button id="loginBtn">Log in</button>
-			<button><a href="/sign-up">Register</a> </button>
+			<button><a href="/auth/sign-up">Register</a> </button>
 		</div>
 	</div>
 	<div class="logn_wrap">
@@ -19,7 +19,7 @@
         </div>
         <div class="content_login" id="content_login">
             <div class="login_header">
-                <a href="">Sing in</a>
+                <a href="/auth/sign-up">Sing up</a>
                 <a href="">Get started free</a>
                 <button id="close_login"><i class="far fa-times-circle"></i></button>
             </div>
@@ -30,18 +30,18 @@
                 <button><i class="fab fa-twitter"></i></button>
             </div>
             <span>Or</span>
-            <form action="">
+            <form action="/auth/login" method="POST">
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    <input name="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="******">
+                    <input name="password" type="password" class="form-control" id="exampleFormControlInput1" placeholder="******">
 
                 </div>
                 <p>When click to sign up button, you agree with CodeLearn <a href="">terms and conditons of use</a></p>
-                <button type="submit" class="btn btn-primary">SIGN UP</button>
+                <button type="submit" class="btn btn-primary">SIGN IN</button>
             </form>
         </div>
     </div>

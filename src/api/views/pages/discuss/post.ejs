@@ -1,0 +1,72 @@
+
+<%- contentFor('head') %> 
+<title>discussion detail</title>
+<link rel="stylesheet" href="/public/stylesheets/pages/discuss/post.css">
+
+<%- contentFor('body') %> 
+<div class="container">
+  <h1>Discussion detail</h1>
+<div class="container-fluid" id="main">
+  <div class="discussion-row">
+    <div class="col-left discussion-section">
+      <div class="discuss-content-wrapper container bg-light">
+        <div class="row">
+          <div class="col-1">
+            <div class="vote-widget">
+              <button><i class="fas fa-angle-up"></i></button>
+              <p>+20</p>
+              <button><i class="fas fa-angle-down"></i></button>
+            </div>
+          </div>
+          <div class="col-11">
+            <h5>Title</h5>
+            <p>As you might have noticed recently, several of our most prominent fellows on Sololearn were harassed and ill-spoken about, which made them leave our community.</p>
+            <p>Also, some users abuse the system making fake accounts and unfairly boosting their xp on fake challenges.</p>
+            <p>As a moderator, I feel sorry I can not prevent this, not being able to track everything. So, for the time-being I am placing a special-purpose code. Please let me know if you notice "crime":</p>
+            <div class="tag-container d-flex justify-content-start">
+              <div class="tag">how to</div>
+              <div class="tag">what</div>
+              <div class="tag">why</div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-end user-bar">
+          <div>
+            <p>name</p>
+            <p>11th May 2018, 8:00 AM</p>
+          </div>
+          <div class="avatar"></div>
+        </div>
+      </div>
+      <div class="answer-section">
+        <div class="top-bar d-flex justify-content-between">
+          <p><span><strong>682 answers</strong></span>&nbsp;&nbsp; <a href="">New answer</a></p>
+          <div>
+            <label for="">Sort by:</label>
+            <select name="" id="">
+              <option value="">Votes</option>
+              <option value="">Dates</option>
+            </select>
+          </div>
+        </div>
+        <div class="answer-container">
+
+        </div>
+      </div>
+    </div>
+    <div class="col-right">
+      <div class="trending-box">
+        <h3>Trending</h3>
+        <div class="hot-posts-container">
+          <ul>
+            <li><a href="#"><i class="far fa-clone"></i> Javascript or python</a></li>
+            <li><a href="#"><i class="far fa-clone"></i> promise vs callback</a></li>
+            <li><a href="#"><i class="far fa-clone"></i> What is event loop</a></li>
+            <li><a href="#"><i class="far fa-clone"></i> The best programing language in the world</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>  
+</div>
