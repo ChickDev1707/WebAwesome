@@ -2,13 +2,13 @@
 <div class="card mb-3">
   <div class="row g-0">
     <div class="col-md-4">
-      <a href="<%= post.url %>">
+      <a href="/blogs/posts/detail">
         <img src="public/assets/images/<%= post.image %>" class="img-fluid rounded-start" alt="...">
       </a>
     </div>
     <div class="col-md-8">
       <div class="card-body">
-        <a href="<%= post.url %>"><h5 class="card-title"><%= post.title %></h5></a>
+        <a href="/blogs/posts/detail"><h5 class="card-title"><%= post.title %></h5></a>
         <p class="card-text"><small class="text-muted"><i class="fas fa-calendar-alt icon_calenda"></i> <%= post.date.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric'}); %> </small></p>
         <p class="card-text"><%= post.intro %> </p>
       </div>

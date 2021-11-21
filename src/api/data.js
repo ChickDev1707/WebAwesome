@@ -7,7 +7,6 @@ const Posts = [
     category: 'series Javascrip nâng cao',
     date: new Date(2021, 9, 20),
     viewName: 'post-1',
-    url: '/posts/1',
     intro: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.'
   },
   {
@@ -17,7 +16,6 @@ const Posts = [
     category: 'series Javascrip nâng cao',
     date: new Date(2021, 10, 10),
     viewName: 'post-2',
-    url: '/posts/2',
     intro: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.'
   },
   {
@@ -27,7 +25,6 @@ const Posts = [
     category: 'series Javascrip nâng cao',
     date: new Date(2020, 5, 1),
     viewName: 'post-1',
-    url: '/posts/3',
     intro: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.'
   },
   {
@@ -37,7 +34,6 @@ const Posts = [
     image: 'js-item4.jpg',
     date: new Date(2021, 7, 20),
     viewName: 'post-4',
-    url: '/posts/4',
     intro: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.'
   },
   {
@@ -47,7 +43,6 @@ const Posts = [
     image: 'htmlcss1.jpg',
     date: new Date(2021, 7, 20),
     viewName: 'post-5',
-    url: '/posts/5',
     intro: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.'
   },
   {
@@ -57,7 +52,6 @@ const Posts = [
     image: 'htmlcss2.jpg',
     date: new Date(2021, 7, 20),
     viewName: 'post-6',
-    url: '/posts/6',
     intro: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.'
   },
   {
@@ -67,7 +61,6 @@ const Posts = [
     image: 'htmlcss3.jpg',
     date: new Date(2021, 7, 20),
     viewName: 'post-7',
-    url: '/posts/7',
     intro: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.'
   },
   {
@@ -77,7 +70,6 @@ const Posts = [
     image: 'react1.jpg',
     date: new Date(2021, 7, 20),
     viewName: 'post-8',
-    url: '/posts/8',
     intro: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.'
   },
   {
@@ -87,7 +79,6 @@ const Posts = [
     image: 'react2.jpg',
     date: new Date(2021, 7, 20),
     viewName: 'post-9',
-    url: '/posts/9',
     intro: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.'
   },
   {
@@ -97,7 +88,6 @@ const Posts = [
     image: 'react3.jpg',
     date: new Date(2021, 7, 20),
     viewName: 'post-10',
-    url: '/posts/10',
     intro: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.'
   },
   {
@@ -107,7 +97,6 @@ const Posts = [
     image: 'react4.jpg',
     date: new Date(2021, 7, 20),
     viewName: 'post-11',
-    url: '/posts/11',
     intro: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.'
   },
   {
@@ -117,7 +106,6 @@ const Posts = [
     image: 'react5.jpg',
     date: new Date(2021, 7, 20),
     viewName: 'post-12',
-    url: '/posts/12',
     intro: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.'
   },
   {
@@ -127,7 +115,6 @@ const Posts = [
     image: 'react6.jpg',
     date: new Date(2021, 7, 20),
     viewName: 'post-13',
-    url: '/posts/13',
     intro: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.'
   },
   {
@@ -137,7 +124,6 @@ const Posts = [
     image: 'react67jpg.jpg',
     date: new Date(2021, 7, 20),
     viewName: 'post-14',
-    url: '/posts/14',
     intro: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.'
   },
   {
@@ -147,7 +133,6 @@ const Posts = [
     image: 'react8.jpg',
     date: new Date(2021, 7, 20),
     viewName: 'post-15',
-    url: '/posts/15',
     intro: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.'
   },
   {
@@ -157,7 +142,6 @@ const Posts = [
     image: 'abm1-1.jpg',
     date: new Date(2021, 7, 20),
     viewName: 'post-16',
-    url: '/posts/16',
     intro: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.'
   },
   {
@@ -167,7 +151,6 @@ const Posts = [
     image: 'abm1-3.jpeg',
     date: new Date(2021, 7, 20),
     viewName: 'post-17',
-    url: '/posts/17',
     intro: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.'
   },
   {
@@ -177,7 +160,6 @@ const Posts = [
     image: 'abm1-4.png',
     date: new Date(2021, 7, 20),
     viewName: 'post-18',
-    url: '/posts/18',
     intro: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.'
   },
   {
@@ -187,7 +169,6 @@ const Posts = [
     image: 'abm1-5.jpg',
     date: new Date(2021, 7, 20),
     viewName: 'post-19',
-    url: '/posts/19',
     intro: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.'
   },
   {
@@ -197,7 +178,6 @@ const Posts = [
     image: 'abm2.png',
     date: new Date(2021, 7, 20),
     viewName: 'post-20',
-    url: '/posts/20',
     intro: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.'
   },
 ]

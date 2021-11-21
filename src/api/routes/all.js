@@ -64,13 +64,12 @@ router.get('/blogs', expressLayout, (req, res)=>{
 // posts route
 
 
-router.get('/posts/:id',expressLayout, (req, res)=>{
-  let postDir = 'post-'+ req.params.id
-  res.render('pages/posts/' + postDir, {auth: req.isAuthenticated()})
+router.get('/blogs/posts/detail', expressLayout, (req, res)=>{
+  res.render('pages/blog/detail.ejs', {auth: req.isAuthenticated()})
 })
 
 // search route
-router.get('/search',expressLayout, (req, res)=>{
+router.get('/blogs/search',expressLayout, (req, res)=>{
   let result = [];
   if(req.query.searchKey!= undefined){
     let key = req.query.searchKey.toLowerCase()
@@ -83,7 +82,7 @@ router.get('/search',expressLayout, (req, res)=>{
           && checkCategory
     })
   }
-  res.render('pages/search.ejs', expressLayout, {result, auth: req.isAuthenticated()})
+  res.render('pages/blog/search.ejs', {result, auth: req.isAuthenticated()})
 })  
 
 function isSooner(target, days){

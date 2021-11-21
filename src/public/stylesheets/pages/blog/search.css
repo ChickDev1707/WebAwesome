@@ -1,0 +1,26 @@
+.main{
+  width: 60%;
+}
+.search-bar>*{
+  font-size: .9rem;
+  border: none;
+  outline: none;
+  margin-bottom: 1rem;
+}
+form button[type="submit"]{
+  background-color: #2980b9;
+  color: white;
+  padding: .5rem;
+  width: 8rem;
+}
+form input[name="searchKey"]{
+  background-color: rgb(221, 221, 221);
+  padding: .25rem 0 .25rem 1rem;
+  flex-grow: 1;
+}
+.advanced-search-collapse-btn{
+  border: none;
+  color: #2980b9;
+  cursor: pointer;
+  background: none;
+}
