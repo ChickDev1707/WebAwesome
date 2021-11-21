@@ -7,7 +7,7 @@
   height: 4rem;
   line-height: 4rem;
   border-radius: 50%;
-  background-color: grey;
+  background-color: var(--secondary);
   color: white;
   text-align: center;
   font-size: 2rem;
@@ -22,4 +22,8 @@
   font-size: 1.5rem;
   text-decoration: underline;
   color: orange;
+}
+.btn{
+  background-color: var(--primary) !important;
+  color: white;
 }
