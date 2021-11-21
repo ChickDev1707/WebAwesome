@@ -1,4 +1,3 @@
-@import url('../../settings/variables.css');
 
 .pro-sec{
   height: 1200px;
@@ -6,19 +5,20 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: var(--text-color-primary);
+  background-color: var(--secondary);
   color: white;
 }
 .pro-sec .header{
   justify-content: center;
+  align-items: center;
   text-align: center;
-  font-size: var(--font-size-super-title);
+  font-size: 5rem;
   font-weight: bold;
 }
 .pro-sec .header div{
-  margin-left: 10px;
+  margin-left: 20px;
   padding: .75rem 1.5rem;
-  font-size: var(--font-size-small-title);
+  font-size: 1.8rem;
   text-transform: uppercase;
   background-color: var(--orange-mild);
   border-radius: 2rem;
@@ -30,7 +30,7 @@
 }
 .pro-sec .card-container .ps-card{
   width: 32%;
-  border: 2px solid var(--text-color-header);
+  border: 2px solid gray;
   border-radius: .5rem;
   padding: 3rem;
 }
@@ -41,17 +41,15 @@
   margin: 0;
 }
 .pro-sec .card-container .ps-card p:nth-child(2){
-  font-size: var(--font-size-super-title);
+  font-size: 5rem;
   margin-top: 2rem;
   font-weight: bold;
   color: var(--orange-mild);
 }
-.pro-sec .card-container .ps-card p:nth-child(3){
-  color: var(--text-color-header);
-}
+
 
 .pro-sec .feature-panel{
-  font-size: var(--font-size-small-title);
+  font-size: 1.8rem;
   font-weight: bold;
   color: var(--orange-mild);
 }

@@ -1,13 +1,12 @@
-@import url('../../settings/variables.css');
 
 .award-sec{
   height: auto;
   padding: 8rem 0;
+  background-color: var(--background-light);
 }
 .award-sec h1{
   margin: 0;
-  font-size: var(--font-size-large-title);
-  color: var(--text-color-primary);
+  font-size: 4rem;
   text-align: center;
 }
 .award-sec .award-container{
@@ -19,14 +18,13 @@
   text-align: center;
   display: block;
   margin: 0;
-  color: var(--text-color-secondary);
 }
 .award-sec .award-container .award-box{
   margin: 0 2rem;
   width: 20%;
 }
 .award-sec .award-container .award-box p:nth-child(1){
-  font-size: var(--font-size-medium-title);
+  font-size: 2.4rem;
 }
 .award-sec .award-container .award-box p:nth-child(2){
   font-size: 1.2rem;

@@ -52,6 +52,9 @@
   margin: 0;
   font-weight: lighter;
 }
+.blog-sec .blog-item-container .card-img-overlay .blog-summary{
+  margin-top: 1rem;
+}
 .blog-item-container .author-tag{
   margin-right: .5rem;
   height: 1.35rem;

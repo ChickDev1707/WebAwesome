@@ -14,3 +14,18 @@
 @import url('./award-sec.css');
 @import url('./contact-sec.css');
 @import url('./last-sec.css');
+@import url('../../settings/variables.css');
+
+:root{
+  --orange-mild: #faaf68;
+  --red-primary: #ff3838;
+  --yellow-primary: #f9ca24;
+}
+.more-info-link{
+  font-size: 1.5rem;
+  text-align: right;
+  font-weight: 600;
+}
+.more-info-link a:hover{
+  color: var(--primary);
+}
