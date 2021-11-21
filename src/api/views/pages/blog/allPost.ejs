@@ -20,10 +20,14 @@
             </div>
             <div class="col-sm-4">
                 <div class="sidebar">
-                    <div class="sidebar_searchbox">
-                        <input type="text" placeholder="Search...">
-                        <i class="fas fa-search"></i>
-                    </div>
+                    <form action="/blogs/search" method="GET">
+                        <div class="sidebar_searchbox">
+                            <input name="searchKey" type="text" placeholder="Search...">
+                            <input name="category" type="text" hidden value="all">
+                            <input name="time" type="text" hidden value="Infinity">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </div>
+                    </form>
                     <div class="category">
                         <h4>Category</h4>
                         <ul class="category_list">

@@ -1,5 +1,7 @@
 .main{
   width: 60%;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
 }
 .search-bar>*{
   font-size: .9rem;
