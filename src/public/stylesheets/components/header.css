@@ -2,7 +2,7 @@
 header{
   display: flex;
   justify-content: space-between;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 4rem;
   background-color: var(--secondary);
   position: sticky;
   top: 0;
@@ -45,24 +45,11 @@ header .header-btn-wrapper button:last-of-type{
 /* header */
 /* ------------------------------------------------------------- */
 
-.header-user-control-icon-wrapper button{
+#header-user-btn{
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
   padding: 0 !important; 
-}
-.header-user-control-icon-wrapper ul{
-  padding: 1rem;
-  width: 15rem !important;
-}
-.header-user-control-icon-wrapper ul li{
-  width: 100%;
-  text-align: left !important;
-  padding: .25rem 1rem;
-}
-.header-user-control-icon-wrapper ul li i{
-  min-width: 1.5rem;
-}
-.header-user-control-icon-wrapper ul li:hover:not(:first-child){
-  background-color: rgb(214, 223, 255);
+  background: url('/public/assets/images/user.png') center;
+  background-size: 3rem 3rem;
 }

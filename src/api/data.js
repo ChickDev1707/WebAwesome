@@ -1,4 +1,10 @@
-const Users= []
+const Users= [
+  {
+    id: 1,
+    email: 'example@gmail.com',
+    password: '1234'
+  }
+]
 const Posts = [
   {
     id: 1,

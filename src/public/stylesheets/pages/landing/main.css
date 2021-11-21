@@ -22,6 +22,8 @@
   --yellow-primary: #f9ca24;
 }
 .more-info-link{
+  display: block;
+  width: 100%;
   font-size: 1.5rem;
   text-align: right;
   font-weight: 600;

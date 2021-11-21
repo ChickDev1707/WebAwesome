@@ -1,6 +1,5 @@
 
 const LocalStrategy = require('passport-local').Strategy
-const bcrypt = require('bcrypt')
 
 function init(passport, getUserByEmail, getUserById){
 
@@ -11,7 +10,7 @@ function init(passport, getUserByEmail, getUserById){
       done(null, false, {message: 'user not found'})
     }else{
       try{
-        if(await bcrypt.compare(password, user.password)){
+        if(user.password == password){
           return done(null, user)
         }else{
           return done(null, false, {message: 'password incorrect'})

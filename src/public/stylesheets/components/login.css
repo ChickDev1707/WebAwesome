@@ -8,10 +8,6 @@ a:hover {
     color: black;
 }
 
-.logn_wrap {
-    position: relative;
-}
-
 .layout {
     position: fixed;
     left: 0;
@@ -25,10 +21,10 @@ a:hover {
 .content_login {
     position: absolute;
     background-color: white;
-    left: -720px;
-    top: 80px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     width: 500px;
-    transform: translateX(-50%);
     border-radius: 10px;
     padding: 40px;
     display: none;

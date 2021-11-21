@@ -1,25 +1,20 @@
 <header>
-	<a href="/"><img src="/public/assets/images/node-logo-white.png" alt=""></a>
+	<a href="/home"><img src="/public/assets/images/node-logo-white.png" alt=""></a>
 	<div class="d-flex align-items-center">
 		<ul>
 			<li><a href="/courses">Courses</a></li>
 			<li><a href="">Code playground</a></li>
 			<li><a href="/discusses">Discuss</a></li>
 			<li><a href="/blogs">Blog</a></li>
-			<li><a href="">Get pro</a></li>
 		</ul>
-		<div class="header-btn-wrapper">
-			<div class="dropdown header-user-control-icon-wrapper">
-				<button type="button" id="header-user-control-icon" data-bs-toggle="dropdown" aria-expanded="false"></button>
-				<ul class="dropdown-menu" aria-labelledby="header-user-control-icon">
-					<li><a href="#">User profile</a></li>
-					<hr>
-					<li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
-					<li><a href="#"><i class="fas fa-question-circle"></i> Help</a></li>
-					<li><form id="logout-form" action="/auth/logout?_method=delete" method="POST">
-						<a href="javascript:{}" onclick="document.getElementById('logout-form').submit(); return false;"><i class="fas fa-sign-out-alt"></i> Log out</a></a>
-					</form></li>
-				</ul>
+		<div class="btn-group" style="margin-left: 2rem">
+			<button type="button" id="header-user-btn" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+			<div class="dropdown-menu dropdown-menu-right">
+				<h6 class="dropdown-header">User panel</h6>
+				<a class="dropdown-item" href="/home"><i class="fas fa-user"></i> Thông tin cá nhân</a>
+				<li><form id="logout-form" action="/auth/logout?_method=delete" method="POST">
+					<a class="dropdown-item" href="javascript:{}" onclick="document.getElementById('logout-form').submit(); return false;"><i class="fas fa-sign-out-alt"></i> Log out</a></a>
+				</form></li>
 			</div>
 		</div>
 	</div>

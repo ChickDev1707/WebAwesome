@@ -1,6 +1,5 @@
 const express = require('express')
 const Users = require('../data').users
-const bcrypt = require('bcrypt')
 
 module.exports = function(passport){
   const router = express.Router()
@@ -19,7 +18,6 @@ module.exports = function(passport){
   })
   router.post('/sign-up', checkNotAuthenticated, async (req , res)=>{
     try{
-      const hashedPassword = await bcrypt.hash(req.body.password, 10)
       Users.push({
         id: Date.now().toString(),
         name: req.body.username,
