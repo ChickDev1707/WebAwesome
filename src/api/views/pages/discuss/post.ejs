@@ -35,12 +35,12 @@
             <p>name</p>
             <p>11th May 2018, 8:00 AM</p>
           </div>
-          <div class="avatar"></div>
+          <div class="avatar"><i class="far fa-user"></i></div>
         </div>
       </div>
       <div class="answer-section">
         <div class="top-bar d-flex justify-content-between">
-          <p><span><strong>682 answers</strong></span>&nbsp;&nbsp; <a href="">New answer</a></p>
+          <p><span><strong>682 answers</strong></span>&nbsp;&nbsp; <a href="/discusses/new" style="color: var(--primary)">New answer</a></p>
           <div>
             <label for="">Sort by:</label>
             <select name="" id="">
@@ -50,7 +50,9 @@
           </div>
         </div>
         <div class="answer-container">
-
+          <% for(let i =0; i<5; i++){ %>
+            <%- include('../../partials/comment-item.ejs') %> 
+          <% } %> 
         </div>
       </div>
     </div>

@@ -2,7 +2,7 @@
 .comment-section>*{
   margin-bottom: 1.5rem;
 }
-.comment-section .avatar-box{
+.avatar-box{
   width: 4rem;
   height: 4rem;
   line-height: 4rem;
@@ -15,10 +15,10 @@
 .comment-box{
   margin-bottom: 3rem;
 }
-.comment-section .comment-box textarea{
+.comment-box textarea{
   margin-bottom: 1rem;
 }
-.comment-section .comment-count-text{
+.comment-count-text{
   font-size: 1.5rem;
   text-decoration: underline;
   color: orange;

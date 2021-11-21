@@ -1,4 +1,8 @@
 @import url('../../settings/variables.css');
+
+h1{
+  margin: 2rem 0;
+}
 .discussion-row{
   display: grid;
   grid-template-columns: repeat(12, 1fr);

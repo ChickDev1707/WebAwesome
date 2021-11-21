@@ -1,5 +1,10 @@
 @import url('../../settings/variables.css');
+@import url('../../components/comment-section.css');
 
+
+h1{
+  margin: 2rem 0;
+}
 .discussion-row{
 
   display: grid;
@@ -23,6 +28,10 @@
   height: 3.5rem;
   border-radius: 50%;
   background-color: var(--accent);
+  color: white;
+  font-size: 1.5rem;
+  line-height: 3.5rem;
+  text-align: center;
 }
 .tag-container .tag{
   cursor: pointer;
@@ -84,4 +93,9 @@
 .answer-section .top-bar p a{
   text-decoration: none;
   text-transform: uppercase;
+}
+.answer-container{
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 2rem 1rem;
+  margin-bottom: 4rem;
 }
