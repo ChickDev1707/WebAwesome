@@ -26,6 +26,7 @@ module.exports = function(passport){
         email: req.body.email,
         password: hashedPassword
       })
+      res.redirect('/')
     }catch(error){
       res.redirect('/auth/sign-up')
     }
