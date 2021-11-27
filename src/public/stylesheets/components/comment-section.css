@@ -3,14 +3,14 @@
   margin-bottom: 1.5rem;
 }
 .avatar-box{
-  width: 4rem;
-  height: 4rem;
-  line-height: 4rem;
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
   border-radius: 50%;
   background-color: var(--secondary);
   color: white;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .comment-box{
   margin-bottom: 3rem;
