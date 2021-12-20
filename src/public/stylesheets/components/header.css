@@ -6,7 +6,7 @@ header{
   background-color: var(--secondary);
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 100;
 }
 
 header a img{
