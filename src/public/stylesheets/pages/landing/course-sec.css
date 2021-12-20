@@ -5,6 +5,7 @@
 .courses-sec{
   padding: 0 4rem 4rem;
   height: auto;
+  background-color: var(--background-light);
 }
 .courses-sec .wrapper{
   position: relative;

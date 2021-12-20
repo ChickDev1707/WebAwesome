@@ -2,6 +2,7 @@
 .info-sec{
   padding: 4rem 4rem 10rem;
   height: 1200px;
+  background-color: var(--background-light);
 }
 .info-sec p{
   margin: 0;

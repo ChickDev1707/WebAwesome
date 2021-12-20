@@ -3,13 +3,13 @@ const Users = require('../data').users
 
 module.exports = function(passport){
   const router = express.Router()
-  router.get('/login', checkNotAuthenticated, (req , res)=>{
-    res.render('login.ejs')
-  })
+  // router.get('/login', checkNotAuthenticated, (req , res)=>{
+  //   res.render('login.ejs')
+  // })
   
   router.post('/login', checkNotAuthenticated, passport.authenticate('local', {
     successRedirect: '/home',
-    failureRedirect: '/login',
+    failureRedirect: '/home',
     failureFlash: true
   }))
   //sign up
