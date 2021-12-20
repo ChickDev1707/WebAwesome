@@ -1,0 +1,440 @@
+<%- contentFor("head") %> 
+<title>Tất cả khóa học</title>
+<link rel="stylesheet" href="/public/stylesheets/pages/codingPlayground/codingPlayground.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" 
+integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" 
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<%- contentFor("body") %> 
+
+<div  class = "row">
+    <div class="col-lg-8" style = "padding: 1.5rem;padding-left:5rem">
+        <div class = "body__playground shadow">
+            <h3 class = "body__playground__title">Code Playground</h3>
+            <div class = "body__playground__searchArea flex flex-jc-sb">
+                <button class= "body__playground__searchArea--newBtn">NEW CODE</button>
+                <span style="width: 50%; margin-right:0;">
+                    <button class= "body__playground__searchArea--searchBtn"><i class="fas fa-search"></i></button> 
+                    <input class= "body__playground__searchArea--searchBox" type="text" name="search-content" placeholder="Search...">
+                    
+                </span>
+            </div>
+            <span style= "float:right; width: 100%;">
+                <div class = "m-3 mb-0" style="width: 10%; float: right;">
+                    <select class="form-select d-inline body__playground__filterArea--filter" aria-label=".form-select-lg example">
+                        <option value="0" selected>All</option>
+                        <option value="1">Web</option>
+                        <option value="2">cpp</option>
+                        <option value="3">c</option>
+                        <option value="4">cs</option>
+                        <option value="5">java</option>
+                        <option value="6">py</option>
+                        <option value="7">php</option>
+                        <option value="8">rb</option>
+                        <option value="9">kt</option>
+                        <option value="10">swift</option>
+                        <option value="11">node</option>
+                        <option value="12">go</option>
+                        <option value="13">r</option>
+                    </select>
+                </div>
+                <p class = "m-2 mt-4 mb-0" style="display: inline; float:right;font-weight: bold;">Show: </p>
+                
+            </span>
+            <div class = "body__playground__filterArea flex flex-jc-sb">
+                <ul class="nav nav-tabs w-100">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#">Trending</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Most Recent</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Most Popular</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My Codes</a>
+                    </li>
+                </ul>
+            </div>
+            <div class = "body__playground__contents">
+                <ul style="list-style:none;">
+                    <li>
+                        <div style="height: 80px;">
+                            <div class = "body__playground__contents--icon cpp">
+                                    <p>CPP</p>
+                            </div>
+                            <div class = "body__playground__contents--info">
+                                <div style="width: 60%; float:left; height: 100%;">
+                                    <a href="/codingPlayground/code"><p class = "name">Find the Day of the Week You Were Born!</p></a>
+                                
+                                    <div style="display: inline-block;width: 50;">
+                                        <button class = "rButton"><i class="fas fa-chevron-up"></i></button>
+                                        <p class = "rating">+20821</p>
+                                        <button class = "rButton"><i class="fas fa-chevron-down"></i></button>
+                                    </div>
+                                 
+                                </div>
+                                <div style="float:right; text-align: right; width: 30%;">
+                                    <div style="float:left">
+                                        <p class = "author">Michael Xanthopoulos</p>
+                                        <p class = "date">11th August 2018, 8:59PM</p>
+                                    </div>
+                                    <image class = "avatar" src = "/public/assets/images/codingPlayground/gai.jpg">
+                                </div>
+                            </div>
+                    </div>
+                    <hr class = "solid">
+                    </li>
+                    <li>
+                        <div style="height: 80px;">
+                            <div class = "body__playground__contents--icon web">
+                                    <p>WEB</p>
+                            </div>
+                            <div class = "body__playground__contents--info">
+                                <div style="width: 60%; float:left; height: 100%;">
+                                    <p class = "name">Find the Day of the Week You Were Born!</p>
+                                
+                                    <div style="display: inline-block;width: 50;">
+                                        <button class = "rButton"><i class="fas fa-chevron-up"></i></button>
+                                        <p class = "rating">+20821</p>
+                                        <button class = "rButton"><i class="fas fa-chevron-down"></i></button>
+                                    </div>
+                                 
+                                </div>
+                                <div style="float:right; text-align: right; width: 30%;">
+                                    <div style="float:left">
+                                        <p class = "author">Michael Xanthopoulos</p>
+                                        <p class = "date">11th August 2018, 8:59PM</p>
+                                    </div>
+                                    <image class = "avatar" src = "/public/assets/images/codingPlayground/gai.jpg">
+                                </div>
+                            </div>
+                    </div>
+                    <hr class = "solid">
+                    </li>
+                    <li>
+                        <div style="height: 80px;">
+                            <div class = "body__playground__contents--icon py">
+                                    <p>PY</p>
+                            </div>
+                            <div class = "body__playground__contents--info">
+                                <div style="width: 60%; float:left; height: 100%;">
+                                    <p class = "name">Find the Day of the Week You Were Born!</p>
+                                
+                                    <div style="display: inline-block;width: 50;">
+                                        <button class = "rButton"><i class="fas fa-chevron-up"></i></button>
+                                        <p class = "rating">+20821</p>
+                                        <button class = "rButton"><i class="fas fa-chevron-down"></i></button>
+                                    </div>
+                                 
+                                </div>
+                                <div style="float:right; text-align: right; width: 30%;">
+                                    <div style="float:left">
+                                        <p class = "author">Michael Xanthopoulos</p>
+                                        <p class = "date">11th August 2018, 8:59PM</p>
+                                    </div>
+                                    <image class = "avatar" src = "/public/assets/images/codingPlayground/gai.jpg">
+                                </div>
+                            </div>
+                    </div>
+                    <hr class = "solid">
+                    </li>
+                    <li>
+                        <div style="height: 80px;">
+                            <div class = "body__playground__contents--icon web">
+                                    <p>WEB</p>
+                            </div>
+                            <div class = "body__playground__contents--info">
+                                <div style="width: 60%; float:left; height: 100%;">
+                                    <p class = "name">Find the Day of the Week You Were Born!</p>
+                                
+                                    <div style="display: inline-block;width: 50;">
+                                        <button class = "rButton"><i class="fas fa-chevron-up"></i></button>
+                                        <p class = "rating">+20821</p>
+                                        <button class = "rButton"><i class="fas fa-chevron-down"></i></button>
+                                    </div>
+                                 
+                                </div>
+                                <div style="float:right; text-align: right; width: 30%;">
+                                    <div style="float:left">
+                                        <p class = "author">Michael Xanthopoulos</p>
+                                        <p class = "date">11th August 2018, 8:59PM</p>
+                                    </div>
+                                    <image class = "avatar" src = "/public/assets/images/codingPlayground/gai.jpg">
+                                </div>
+                            </div>
+                            
+                    </div>
+                    <hr class = "solid">
+                    </li>
+                    <li>
+                        <div style="height: 80px;">
+                            <div class = "body__playground__contents--icon java">
+                                    <p>JAVA</p>
+                            </div>
+                            <div class = "body__playground__contents--info">
+                                <div style="width: 60%; float:left; height: 100%;">
+                                    <p class = "name">Find the Day of the Week You Were Born!</p>
+                                
+                                    <div style="display: inline-block;width: 50;">
+                                        <button class = "rButton"><i class="fas fa-chevron-up"></i></button>
+                                        <p class = "rating">+20821</p>
+                                        <button class = "rButton"><i class="fas fa-chevron-down"></i></button>
+                                    </div>
+                                 
+                                </div>
+                                <div style="float:right; text-align: right; width: 30%;">
+                                    <div style="float:left">
+                                        <p class = "author">Michael Xanthopoulos</p>
+                                        <p class = "date">11th August 2018, 8:59PM</p>
+                                    </div>
+                                    <image class = "avatar" src = "/public/assets/images/codingPlayground/gai.jpg">
+                                </div>
+                            </div>
+                    </div>
+                    <hr class = "solid">
+                    </li>
+                    <li>
+                        <div style="height: 80px;">
+                            <div class = "body__playground__contents--icon cpp">
+                                    <p>CPP</p>
+                            </div>
+                            <div class = "body__playground__contents--info">
+                                <div style="width: 60%; float:left; height: 100%;">
+                                    <p class = "name">Find the Day of the Week You Were Born!</p>
+                                
+                                    <div style="display: inline-block;width: 50;">
+                                        <button class = "rButton"><i class="fas fa-chevron-up"></i></button>
+                                        <p class = "rating">+20821</p>
+                                        <button class = "rButton"><i class="fas fa-chevron-down"></i></button>
+                                    </div>
+                                 
+                                </div>
+                                <div style="float:right; text-align: right; width: 30%;">
+                                    <div style="float:left">
+                                        <p class = "author">Michael Xanthopoulos</p>
+                                        <p class = "date">11th August 2018, 8:59PM</p>
+                                    </div>
+                                    <image class = "avatar" src = "/public/assets/images/codingPlayground/gai.jpg">
+                                </div>
+                            </div>
+                    </div>
+                    <hr class = "solid">
+                    </li>
+                    <li>
+                        <div style="height: 80px;">
+                            <div class = "body__playground__contents--icon cpp">
+                                    <p>CPP</p>
+                            </div>
+                            <div class = "body__playground__contents--info">
+                                <div style="width: 60%; float:left; height: 100%;">
+                                    <p class = "name">Find the Day of the Week You Were Born!</p>
+                                
+                                    <div style="display: inline-block;width: 50;">
+                                        <button class = "rButton"><i class="fas fa-chevron-up"></i></button>
+                                        <p class = "rating">+20821</p>
+                                        <button class = "rButton"><i class="fas fa-chevron-down"></i></button>
+                                    </div>
+                                 
+                                </div>
+                                <div style="float:right; text-align: right; width: 30%;">
+                                    <div style="float:left">
+                                        <p class = "author">Michael Xanthopoulos</p>
+                                        <p class = "date">11th August 2018, 8:59PM</p>
+                                    </div>
+                                    <image class = "avatar" src = "/public/assets/images/codingPlayground/gai.jpg">
+                                </div>
+                            </div>
+                    </div>
+                    <hr class = "solid">
+                    </li>
+                    <li>
+                        <div style="height: 80px;">
+                            <div class = "body__playground__contents--icon web">
+                                    <p>WEB</p>
+                            </div>
+                            <div class = "body__playground__contents--info">
+                                <div style="width: 60%; float:left; height: 100%;">
+                                    <p class = "name">Find the Day of the Week You Were Born!</p>
+                                
+                                    <div style="display: inline-block;width: 50;">
+                                        <button class = "rButton"><i class="fas fa-chevron-up"></i></button>
+                                        <p class = "rating">+20821</p>
+                                        <button class = "rButton"><i class="fas fa-chevron-down"></i></button>
+                                    </div>
+                                 
+                                </div>
+                                <div style="float:right; text-align: right; width: 30%;">
+                                    <div style="float:left">
+                                        <p class = "author">Michael Xanthopoulos</p>
+                                        <p class = "date">11th August 2018, 8:59PM</p>
+                                    </div>
+                                    <image class = "avatar" src = "/public/assets/images/codingPlayground/gai.jpg">
+                                </div>
+                            </div>
+                    </div>
+                    <hr class = "solid">
+                    </li>
+                    <li>
+                        <div style="height: 80px;">
+                            <div class = "body__playground__contents--icon py">
+                                    <p>PY</p>
+                            </div>
+                            <div class = "body__playground__contents--info">
+                                <div style="width: 60%; float:left; height: 100%;">
+                                    <a href="/codingPlayground/code"><p class = "name">Find the Day of the Week You Were Born!</p></a>
+                                
+                                    <div style="display: inline-block;width: 50;">
+                                        <button class = "rButton"><i class="fas fa-chevron-up"></i></button>
+                                        <p class = "rating">+20821</p>
+                                        <button class = "rButton"><i class="fas fa-chevron-down"></i></button>
+                                    </div>
+                                 
+                                </div>
+                                <div style="float:right; text-align: right; width: 30%;">
+                                    <div style="float:left">
+                                        <p class = "author">Michael Xanthopoulos</p>
+                                        <p class = "date">11th August 2018, 8:59PM</p>
+                                    </div>
+                                    <image class = "avatar" src = "/public/assets/images/codingPlayground/gai.jpg">
+                                </div>
+                            </div>
+                    </div>
+                    <hr class = "solid">
+                    </li>
+                    <li>
+                        <div style="height: 80px;">
+                            <div class = "body__playground__contents--icon web">
+                                    <p>WEB</p>
+                            </div>
+                            <div class = "body__playground__contents--info">
+                                <div style="width: 60%; float:left; height: 100%;">
+                                    <p class = "name">Find the Day of the Week You Were Born!</p>
+                                
+                                    <div style="display: inline-block;width: 50;">
+                                        <button class = "rButton"><i class="fas fa-chevron-up"></i></button>
+                                        <p class = "rating">+20821</p>
+                                        <button class = "rButton"><i class="fas fa-chevron-down"></i></button>
+                                    </div>
+                                 
+                                </div>
+                                <div style="float:right; text-align: right; width: 30%;">
+                                    <div style="float:left">
+                                        <p class = "author">Michael Xanthopoulos</p>
+                                        <p class = "date">11th August 2018, 8:59PM</p>
+                                    </div>
+                                    <image class = "avatar" src = "/public/assets/images/codingPlayground/gai.jpg">
+                                </div>
+                            </div>
+                            
+                    </div>
+                    <hr class = "solid">
+                    </li>
+                    <li>
+                        <div style="height: 80px;">
+                            <div class = "body__playground__contents--icon java">
+                                    <p>JAVA</p>
+                            </div>
+                            <div class = "body__playground__contents--info">
+                                <div style="width: 60%; float:left; height: 100%;">
+                                    <p class = "name">Find the Day of the Week You Were Born!</p>
+                                
+                                    <div style="display: inline-block;width: 50;">
+                                        <button class = "rButton"><i class="fas fa-chevron-up"></i></button>
+                                        <p class = "rating">+20821</p>
+                                        <button class = "rButton"><i class="fas fa-chevron-down"></i></button>
+                                    </div>
+                                 
+                                </div>
+                                <div style="float:right; text-align: right; width: 30%;">
+                                    <div style="float:left">
+                                        <p class = "author">Michael Xanthopoulos</p>
+                                        <p class = "date">11th August 2018, 8:59PM</p>
+                                    </div>
+                                    <image class = "avatar" src = "/public/assets/images/codingPlayground/gai.jpg">
+                                </div>
+                            </div>
+                    </div>
+                    <hr class = "solid">
+                    </li>
+                    <li>
+                        <div style="height: 80px;">
+                            <div class = "body__playground__contents--icon cpp">
+                                    <p>CPP</p>
+                            </div>
+                            <div class = "body__playground__contents--info">
+                                <div style="width: 60%; float:left; height: 100%;">
+                                    <p class = "name">Find the Day of the Week You Were Born!</p>
+                                
+                                    <div style="display: inline-block;width: 50;">
+                                        <button class = "rButton"><i class="fas fa-chevron-up"></i></button>
+                                        <p class = "rating">+20821</p>
+                                        <button class = "rButton"><i class="fas fa-chevron-down"></i></button>
+                                    </div>
+                                 
+                                </div>
+                                <div style="float:right; text-align: right; width: 30%;">
+                                    <div style="float:left">
+                                        <p class = "author">Michael Xanthopoulos</p>
+                                        <p class = "date">11th August 2018, 8:59PM</p>
+                                    </div>
+                                    <image class = "avatar" src = "/public/assets/images/codingPlayground/gai.jpg">
+                                </div>
+                            </div>
+                    </div>
+                    </li>
+                    <div class = "body__playground__pages">
+                        <button class = "pButton active">1</button>
+                        <button class = "pButton">2</button>
+                        <label>. . .</label>
+                    </div>
+                </ul>
+    
+            
+    
+            </div>
+            
+        </div>
+    </div>
+    <div class="col-lg-4" style = "padding: 1.5rem;padding-left:3rem;padding-top:3rem;padding-right:5rem">
+        <div class = "body__hotNew shadow">
+            <h3 class = "body__hotNew__title">Hot Today</h3>
+            <div class = "body__hotNew__contents">
+                <ul style="list-style: none;">
+                    <li>
+                        <a target="_blank" rel="noopener noreferrer" href="#">Diwali Oath</a>
+                    </li>
+                    <li>
+                        <a target="_blank" rel="noopener noreferrer" href="#">😉 Profile Card 😉( CSS Design )</a>
+                    </li>
+                    <li>
+                        <a target="_blank" rel="noopener noreferrer" href="#">PAY NO ATTENTION!!! (simple login form:)</a>
+                    </li>
+                    <li>
+                        <a target="_blank" rel="noopener noreferrer" href="#">|🍁Summer🌞season🍂|</a>
+                    </li>
+                    <li>
+                        <a target="_blank" rel="noopener noreferrer" href="#">♟️CHESS♟️</a>
+                    </li>
+                    <li>
+                        <a target="_blank" rel="noopener noreferrer" href="#">New Year in SPRING</a>
+                    </li>
+                    <li>
+                        <a target="_blank" rel="noopener noreferrer" href="#">Squid Game </a>
+                    </li>
+                    <li>
+                        <a target="_blank" rel="noopener noreferrer" href="#">website open on click</a>
+                    </li>
+                    <li>
+                        <a target="_blank" rel="noopener noreferrer" href="#">Money Transfer</a>
+                    </li>
+                   
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+</div>
+

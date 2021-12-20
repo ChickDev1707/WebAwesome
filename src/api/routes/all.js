@@ -68,6 +68,19 @@ router.get('/blogs/posts/detail', expressLayout, (req, res)=>{
   res.render('pages/blog/detail.ejs', {auth: req.isAuthenticated()})
 })
 
+//coding playground
+router.get('/codingPlayground', expressLayout, (req, res)=>{
+  res.render('pages/codingPlayground/codingPlayground.ejs', {auth: req.isAuthenticated()})
+})
+
+router.get('/codingPlayground/code', expressLayout, (req, res)=>{
+  res.render('pages/codingPlayground/code.ejs', {auth: req.isAuthenticated()})
+})
+
+//portfolio
+router.get('/portfolio', expressLayout, (req, res)=>{
+  res.render('pages/portfolio/index.ejs', {auth: req.isAuthenticated()})
+})
 // search route
 router.get('/blogs/search',expressLayout, (req, res)=>{
   let result = [];
