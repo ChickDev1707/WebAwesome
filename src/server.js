@@ -1,7 +1,7 @@
 
-// if(process.env.NODE_ENV !== 'production'){
-//   require('dotenv').config()
-// }
+if(process.env.NODE_ENV !== 'production'){
+  require('dotenv').config()
+}
 // includes packages
 const express = require('express')
 const passport = require('passport')
@@ -50,4 +50,4 @@ app.use('/auth', authRoute(passport))
 // routes
 
 // listen
-app.listen(port)
+app.listen(process.env.PORT || port)
