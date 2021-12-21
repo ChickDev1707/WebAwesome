@@ -1,244 +1,319 @@
-<%- contentFor('head') %> 
-<title>Chi tiết bài viết</title>
-<script src="/public/javascripts/post-detail.js"></script>
-<link rel="stylesheet" href="/public/stylesheets/pages/blog/detail.css">
+<%- contentFor('head') %>
+  <title>Blog detail</title>
+  <script src="/public/javascripts/post-detail.js"></script>
+  <link rel="stylesheet" href="/public/stylesheets/pages/blog/detail.css">
 
-<%- contentFor('body') %> 
-<div id="main">
-  <div class="img-container">
-  </div>
-  <div class="post-section">
-    <div class="main-post-section">
-      <div class="post-content">
-          <h5 class="post-type">Technology</h5>
-          <h1>Frontend và backend là gì?</h1>
-          <div class="head">
-            <div class="d-flex justify-content-between">
-              <div>
-                <a href="#"><i class="far fa-user"></i> Hữu Thuận</a>
-                <p class="posted-date"><i class="far fa-clock"></i> Thứ năm, 14/10/2021 19:05 (GMT+7)</p>
+  <%- contentFor('body') %>
+    <div id="main">
+      <div class="img-container">
+      </div>
+      <div class="post-section">
+        <div class="main-post-section">
+          <div class="post-content">
+            <h5 class="post-type">Technology</h5>
+            <h1>What are Frontend and backend?</h1>
+            <div class="head">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <a href="#"><i class="far fa-user"></i> Huu Thuan</a>
+                  <p class="posted-date"><i class="far fa-clock"></i> Thursday, 10/14/2021 19:05 (GMT+7)</p>
+                </div>
+                <p><i class="far fa-eye"></i> 120</p>
               </div>
-              <p><i class="far fa-eye"></i> 120</p>
+            </div>
+            <p>Answer from you <a href="https://hoovada.com/profile/nguyen-phuc" target="_blank">Nguyen Phuc</a> - a
+              member of <a href="https ://hoovada.com/" target="_blank"></a>Hoovada lives in HCMC</p>
+            <h2 id="item-1">1 About</h2>
+            <p>Each party needs to communicate and work effectively with the other to improve the website's
+              functionality.</p>
+            <h2 id="item-2">2 Front end</h2>
+            <h4 id="item-2-1">2.1 About</h4>
+            <p><strong>Front End Development:</strong> The front end or 'customer side' of a website or application is
+              where the user interacts directly. It includes everything that users experience directly including
+              colors and styles of text, images, and more. The structure, design, behavior, and content of everything
+              that's visible on the browser screen when websites, web apps, or mobile apps are opened, was made by
+              Front End developers. The main goal of Front End is responsiveness and performance. The developer must
+              ensure that the website is responsive, i.e. it appears correctly on devices of any size and there are no
+              parts that are inoperable.</p>
+            <h4 id="item-2-2">2.2 Language</h4>
+            <p><strong>Language of the Front End:</strong> The Front End section is built using some of the following
+              languages:</p>
+            <ul>
+              <li>HTML: Hypertext Markup Language (HTML) is a combination of hypertext and markup language, used to
+                design the user interface part of web pages. Hypertext defines links between web pages and markup
+                language is used to define text documents in tags that define the structure of web pages.</li>
+              <li>CSS: Cascading Style Sheets (CSS) is a simple language designed to simplify the process of making
+                web pages displayable. CSS allows you to apply styles to web pages. More importantly, CSS allows you
+                to do this independently of the HTML that makes up each web page.</li>
+              <li>JavaScript: JavaScript is a well known scripting language that is used to cast magic on web pages to
+                make web pages interactive for users. It is used to enhance the functionality of a website to run
+                interesting games and web-based software.</li>
+            </ul>
+            <h4 id="item-2-3">2.3 Working with the front end</h4>
+            <p>There are many other languages ​​through which one can do front-end development depending on the
+              framework e.g. Flutter user Dart, React using JavaScript and Django using Python etc.</p>
+            <p><strong>Front End Frameworks and Libraries:</strong></p>
+            <ul>
+              <li>AngularJS: AngularJs is an open source JavaScript front-end framework used primarily for developing
+                single-page web applications (SPA). It is a constantly evolving and expanding framework that provides
+                better ways to develop web applications. It changes static HTML to dynamic HTML. It is an open source
+                project that is possibly free. It extends HTML attributes with Directives and associated data with
+                HTML.</li>
+              <li>React.js: React is a declarative, efficient, and flexible JavaScript library for building user
+                interfaces. ReactJS is an open source component-based front-end library that is only responsible for
+                the application's view layer. It is maintained by Facebook.</li>
+              <li>Bootstrap: Bootstrap is a collection of free and open source tools for creating responsive websites
+                and web applications. It is the most popular HTML, CSS, and JavaScript framework for developing
+                responsive, mobile-first websites.</li>
+              <li>jQuery: jQuery is an open source JavaScript library that simplifies the interactions between an
+                HTML/CSS document, or more precisely, the Document Object Model (DOM) and JavaScript. Building on
+                terms, jQuery simplifies browsing and manipulating HTML documents, browser event handling, DOM
+                animations, Ajax interactions, and cross-browser JavaScript development.</li>
+              <li>SASS: This is the most reliable, fully developed and powerful CSS extension language. It is used to
+                extend the functionality of a web page's existing CSS to include everything from variables,
+                inheritance, and nesting with ease.</li>
+              <li>Flutter: Flutter is an open source UI development SDK managed by google. It is
+                provided by the Dart programming language. It builds efficient natively compiled applications and
+                beautiful for mobile (Ios, Android), web and desktop from a single codebase. Sale point
+                Flagship's main line is flat development made easier, expressive user interface,
+                flexibility and original performance. In March 2021, Flutter 2 announced Flutter 2 where upgrades
+                Upgraded tier to build publishing apps for web and desktop in the state
+                beta.</li>
+            </ul>
+            <p>Some other libraries and frameworks are Semantic-UI, Foundation, Materialize, Backbone.js, Ember.js,
+              etc.</p>
+            <h2 id="item-3">3 Backend</h2>
+            <h4 id="item-3-1">3.1 About</h4>
+            <p><strong>Back End Development:</strong> The Back End is the server side of the website. It takes care of
+              storing and organizing the data as well as making sure the website user side works well. It is the part
+              of the website that the user cannot see or interact with. Parts and features developed by Back End
+              designers are accessed indirectly by users through a front-end application. Activities such as writing
+              APIs, creating libraries, and working with system components are also included in the Back End.</p>
+            <h4 id="item-3-2">3.2 Language</h4>
+            <p><strong>Language of the Back end:</strong> The back end is built using some of the following languages:
+            </p>
+            <ul>
+              <li>PHP: PHP is a server-side scripting language specifically designed for web development. Since PHP
+                code is executed on the server side, so it is called a server side scripting language.</li>
+              <li>C++: It is a general-purpose programming language and is widely used today for competitive
+                programming. It is also used as an auxiliary language.</li>
+              <li>Java: Java is one of the most popular programming languages ​​and platforms. It is highly scalable.
+                Java components are always available.</li>
+              <li>Python: Python is a programming language that allows you to work quickly and integrate systems more
+                efficiently.</li>
+              <li>JavaScript: JavaScript can be used for both front end and back end.</li>
+              <li>Node.js: Node.js is an open source and cross-platform runtime environment for executing JavaScript
+                code outside of the browser. Most people confuse Node.js as a framework or a programming language but
+                that is completely incorrect. Node.js is commonly used to build back-end services like APIs like Web
+                App or Mobile App as well as in production by big companies like Paypal, Uber, Netflix, Wallmart etc.
+              </li>
+            </ul>
+            <h4 id="item-3-3">3.3 Working with the backend</h4>
+            <p><strong>Back End Framework:</strong></p>
+            <p>The list of back-end frameworks is: Express, Django, Rails, Laravel, Spring, etc.</p>
+            <p>Other back-end programming/scripting languages ​​are C#, Ruby, REST, GO, etc.</p>
+            <p>**Difference between Frontend and Backend: **</p>
+            <p>The development of Frontend and Backend are quite different, but they are still two aspects of the same
+              job. Frontend is what users see and interact with and Backend is how things work.</p>
+            <p>Front End is the part of a web page that the user can see and interact with such as a graphical user
+              interface (GUI) and command line including design, menu navigation, text, images, videos and many other
+              things. In contrast, the Back End is the part of the website that the user cannot see and interact with.
+            </p>
+            <p>The visual aspects of a website that users can see and experience are Front End. On the other hand,
+              everything that happens in the background can be attributed to the Back End.</p>
+            <p>The languages ​​commonly used for Front End are HTML, CSS, JavaScript while Back End use languages
+              ​​like Java, Ruby, Python, .Net.</p>
+            <p>Answer from you <a href="https://hoovada.com/profile/nguyen-phuc" target="_blank">Nguyen Phuc</a> - a
+              member of <a href="https ://hoovada.com/" target="_blank">Hoovada</a> lives in HCMC. You can connect
+              with each other through <a href="https://www.facebook.com/groups/144206164549707" target="_blank">Hoovada
+                on Facebook</a>. More good questions on <a href="https://hoovada.com/" target="_blank">Hoovada</a>:</p>
+            <ul>
+              <li><a href="https://hoovada.com/question/nhung-phan-mem-thiet-ke-hinh-anh-tot-tren-smartphone"
+                  target="_blank">Image design software good photos on smartphones?</a></li>
+              <li><a
+                  href="https://hoovada.com/question/vi-sao-cang-ngay-nganh-cong-nguyen-thong-tin-lai-duoc-quan-tam-va-tro-thanh- muc-tieu-cua-nhieu-ban-tre"
+                  target="_blank">Why is the information technology industry getting more and more attention and
+                  becoming the target of many young people?</a></li>
+              <li><a href="https://hoovada.com/question/lich-su-hinh-thanh-youtube" target="_blank">History of
+                  youtube?</a></li>
+            </ul>
+          </div>
+          <div class="tag-container">
+            <h5><i class="fas fa-tags"></i> tags</h5>
+            <div class="d-flex flex-row">
+              <div class="tag"><a href="#">Web dev</a></div>
+              <div class="tag"><a href="#">Architecture</a></div>
             </div>
           </div>
-          <p>Đáp án đến từ bạn <a href="https://hoovada.com/profile/nguyen-phuc" target="_blank">Nguyễn Phúc</a> - một thành viên của <a href="https://hoovada.com/" target="_blank"></a>Hoovada sống tại TPHCM</p>
-          <h2 id="item-1">1 Giới thiệu</h2>
-          <p><strong>Front End và Back End:</strong> Frontend và Backend là hai thuật ngữ phổ biến nhất được sử dụng trong phát triển web, tuy trái ngược nhau nhưng đều vô cùng quan trọng đối với sự phát triển web. Mỗi bên cần giao tiếp và hoạt động hiệu quả với bên nhau để cải thiện chức năng của trang web.</p>
-          <h2 id="item-2">2 Front end</h2>
-          <h4 id="item-2-1">2.1 Giới thiệu</h4>
-          <p><strong>Phát triển Front End:</strong> Front End hay 'phía khách hàng' của trang web hay ứng dụng là mà người dùng tương tác trực tiếp. Nó bao gồm mọi thứ mà người dùng trải nghiệm trực tiếp trong đó có màu sắc và kiểu văn bản, hình ảnh,…. Cấu trúc, thiết kế, hành vi và nội dung của mọi thứ hiển thị trên màn hình trình duyệt khi các trang web, ứng dụng web hoặc ứng dụng di động được mở ra, được thực hiện bởi các nhà phát triển Front End. Mục tiêu chính của Front End là khả năng đáp ứng và hiệu suất. Nhà phát triển phải đảm bảo rằng trang web đáp ứng, tức là nó xuất hiện chính xác trên các thiết bị ở mọi kích thước và không có phần nào không thể hoạt động được.</p>
-          <h4 id="item-2-2">2.2 Ngôn ngữ</h4>
-          <p><strong>Ngôn ngữ của Front End:</strong> Phần Front End được xây dựng bằng cách sử dụng một số ngôn ngữ bên dưới:</p>
-          <ul>
-          <li>HTML: Hypertext Markup Language (HTML) là sự kết hợp giữa siêu văn bản và ngôn gữ đánh dấu, được sử dụng để thiết kế phần giao diện người dùng của các trang web. Siêu văn bản xác định liên kết giữa các trang web còn ngôn ngữ đánh dấu được sử dụng để xác định tài liệu văn bản trong thẻ xác định cấu trúc của các trang web.</li>
-          <li>CSS: Cascading Style Sheets (CSS) là một ngôn ngữ được thiết kế đơn giản nhằm mục đích đơn giản hóa quá trình làm cho các trang web có thể hiển thị. CSS cho phép bạn áp dụng các kiểu cho các trang web. Quan trọng hơn, CSS cho phép bạn làm điều này độc lập với HTML tạo nên mỗi trang web.</li>
-          <li>JavaScript: JavaScript là một ngôn ngữ kịch bản nổi tiếng được sử dụng để tạo ra ma thuật trên các trang web để làm cho trang web trở nên tương tác cho người dùng. Nó được sử dụng để nâng cao chức năng của một trang web để chạy các trò chơi thú vị và phần mềm dựa trên web.</li>
-          </ul>
-          <h4 id="item-2-3">2.3 Làm việc với front end</h4>
-          <p>Có nhiều ngôn ngữ khác mà qua đó người ta có thể phát triển front-end tùy thuộc vào khung công tác, ví dụ như Flutter user Dart, React sử dụng JavaScript và Django sử dụng Python, v.v.</p>
-          <p><strong>Khung làm việc và Thư viện của Front End:</strong></p>
-          <ul>
-          <li>AngularJS: AngularJs là một framework front-end mã nguồn mở JavaScript được sử dụng chủ yếu để phát triển các ứng dụng web một trang (SPA). Nó là một khuôn khổ liên tục phát triển và mở rộng cung cấp những cách tốt hơn để phát triển các ứng dụng web. Nó thay đổi HTML tĩnh thành HTML động. Nó là một dự án mã nguồn mở có thể miễn phí. Nó mở rộng các thuộc tính HTML với Directives và dữ liệu được liên kết với HTML.</li>
-          <li>React.js: React là một thư viện JavaScript khai báo, hiệu quả và linh hoạt để xây dựng giao diện người dùng. ReactJS là một thư viện front-end dựa trên thành phần mã nguồn mở chỉ chịu trách nhiệm cho lớp xem của ứng dụng. Nó được duy trì bởi Facebook.</li>
-          <li>Bootstrap: Bootstrap là một bộ sưu tập công cụ mã nguồn mở và miễn phí để tạo các trang web và ứng dụng web đáp ứng. Đây là khuôn khổ HTML, CSS và JavaScript phổ biến nhất để phát triển các trang web đáp ứng, ưu tiên thiết bị di động.</li>
-          <li>jQuery: jQuery là một thư viện JavaScript mã nguồn mở giúp đơn giản hóa các tương tác giữa một tài liệu HTML / CSS, hay chính xác hơn là Mô hình Đối tượng Tài liệu (DOM) và JavaScript. Xây dựng các điều khoản, jQuery đơn giản hóa việc duyệt và thao tác tài liệu HTML, xử lý sự kiện trình duyệt, hoạt ảnh DOM, tương tác Ajax và phát triển JavaScript trên nhiều trình duyệt.</li>
-          <li>SASS: Đây là ngôn ngữ mở rộng ủa CSS đáng tin cậy, được phát triển đầy đủ và mạnh mẽ nhất. Nó được sử dụng để mở rộng chức năng của CSS hiện có của một trang web bao gồm mọi thứ từ các biến, kế thừa và lồng một cách dễ dàng.</li>
-          <li>Flutter: Flutter là một SDK phát triển giao diện người dùng mã nguồn mở do google quản lý. Nó được cung cấp bởi ngôn ngữ lập trình Dart. Nó xây dựng các ứng dụng được biên dịch nguyên bản hiệu quả và đẹp mắt cho thiết bị di động (Ios, Android), web và máy tính để bàn từ một cơ sở mã duy nhất. Điểm bán hàng chính của Flagship là phát triển phẳng được thực hiện dễ dàng hơn, giao diện người dùng biểu cảm, linh hoạt và hiệu suất gốc. Vào tháng 3 năm 2021, Flutter 2 đã công bố Flutter 2 trong đó các bản nâng cấp được nâng cấp để xây dựng các ứng dụng phát hành cho web và máy tính để bàn đang ở trạng thái beta.</li>
-          </ul>
-          <p>Một số thư viện và khung làm việc khác là Semantic-UI, Foundation, Materialize, Backbone.js, Ember.js, v.v.</p>
-          <h2 id="item-3">3 Backend</h2>
-          <h4 id="item-3-1">3.1 Giới thiệu</h4>
-          <p><strong>Phát triển Back End:</strong> Back End là phía máy chủ của trang web. Nó đảm nhận việc lưu trữ và sắp xếp dữ liệu cũng như đảm bảo phía người dùng trang web hoạt động tốt. Nó là một phần của trang web mà người dùng không thể nhìn thấy hay tương tác được. Các phần và đặc điểm được phát triển bởi các nhà thiết kế Back End được người dùng truy cập gián tiếp thông qua một ứng dụng front-end. Các hoạt động như viết API, tạo thư viện và làm việc với các thành phần hệ thống cũng được bao gồm trong Back End.</p>
-          <h4 id="item-3-2">3.2 Ngôn ngữ</h4>
-          <p><strong>Ngôn ngữ của Back end:</strong> Phần back end được xây dựng bằng cách sử dụng một số ngôn ngữ bên dưới:</p>
-          <ul>
-          <li>PHP: PHP là một ngôn ngữ kịch bản phía máy chủ được thiết kế đặc biệt để phát triển web. Vì mã PHP được thực thi ở phía máy chủ, vì vậy nó được gọi là ngôn ngữ kịch bản phía máy chủ.</li>
-          <li>C ++: Nó là một ngôn ngữ lập trình đa năng và được sử dụng rộng rãi ngày nay để lập trình cạnh tranh. Nó cũng được sử dụng như một ngôn ngữ phụ trợ.</li>
-          <li>Java: Java là một trong những nền tảng và ngôn ngữ lập trình phổ biến nhất. Nó có khả năng mở rộng cao. Các thành phần của Java luôn có sẵn.</li>
-          <li>Python: Python là một ngôn ngữ lập trình cho phép bạn làm việc nhanh chóng và tích hợp các hệ thống hiệu quả hơn.</li>
-          <li>JavaScript: JavaScript có thể được sử dụng cho cả front end và back end.</li>
-          <li>Node.js: Node.js là một môi trường chạy mã nguồn mở và đa nền tảng để thực thi mã JavaScript bên ngoài trình duyệt. Hầu hết mọi người đều nhầm lẫn Node.js là một khuôn khổ hoặc một ngôn ngữ lập trình nhưng điều đó hoàn toàn không chính xác. Node.js thường được sử dụng để xây dựng các dịch vụ back-end như API như Web App hoặc Mobile App cũng như trong sản xuất của các công ty lớn như Paypal, Uber, Netflix, Wallmart, v.v.</li>
-          </ul>
-          <h4 id="item-3-3">3.3 Làm việc với backend</h4>
-          <p><strong>Khung làm việc của Back End:</strong></p>
-          <p>Danh sách các khung làm việc ủa back-end là: Express, Django, Rails, Laravel, Spring, v.v.</p>
-          <p>Các ngôn ngữ kịch bản / chương trình back-end khác là C #, Ruby, REST, GO, v.v.</p>
-          <p>**Sự khác biệt giữa Frontend và Backend: **</p>
-          <p>Sự phát triển của Frontend và Backend khá khác nhau, nhưng chúng vẫn là hai khía cạnh của cùng một công việc. Frontend là những gì người dùng nhìn thấy và tương tác và Backend là cách mọi thứ hoạt động.</p>
-          <p>Front End là phần của trang web mà người dùng có thể nhìn thấy và tương tác như giao diện đồ họa người dùng (GUI) và dòng lệnh trong đó có thiết kế, điều hướng menu, văn bản, hình ảnh, video và nhiều thứ khác. Ngược lại, Back End là một phần của trang web mà người dùng không thể nhìn thấy và tương tác.</p>
-          <p>Các khía cạnh trực quan của trang web mà người dùng có thể nhìn thấy và trải nghiệm là Front End. Mặt khác, mọi thứ xảy ra trong nền có thể được quy cho Back End.</p>
-          <p>Các ngôn ngữ thường được sử dụng cho Front End là HTML, CSS, JavaScript trong khi Back End sử dụng những ngôn ngữ như Java, Ruby, Python, .Net.</p>
-          <p>Đáp án đến từ bạn <a href="https://hoovada.com/profile/nguyen-phuc" target="_blank">Nguyễn Phúc</a> - một thành viên của <a href="https://hoovada.com/" target="_blank">Hoovada</a> sống tại TPHCM. Các bạn có thể kết nối với nhau thông qua <a href="https://www.facebook.com/groups/144206164549707" target="_blank">Hoovada trên Facebook</a>. Những câu hỏi hay khác trên <a href="https://hoovada.com/" target="_blank">Hoovada</a>:</p>
-          <ul>
-          <li><a href="https://hoovada.com/question/nhung-phan-mem-thiet-ke-hinh-anh-tot-tren-smartphone" target="_blank">Những phần mềm thiết kế hình ảnh tốt trên smartphone?</a></li>
-          <li><a href="https://hoovada.com/question/vi-sao-cang-ngay-nganh-cong-nghe-thong-tin-lai-duoc-quan-tam-va-tro-thanh-muc-tieu-cua-nhieu-ban-tre" target="_blank">Vì sao càng ngày ngành công nghệ thông tin lại được quan tâm và trở thành mục tiêu của nhiều bạn trẻ ?</a></li>
-          <li><a href="https://hoovada.com/question/lich-su-hinh-thanh-youtube" target="_blank">Lịch sử hình thành youtube?</a></li>
-          </ul>
-      </div>
-      <div class="tag-container">
-        <h5><i class="fas fa-tags"></i> tags</h5>
-        <div class="d-flex flex-row">
-          <div class="tag"><a href="#">Web dev</a></div>
-          <div class="tag"><a href="#">Architecture</a></div>
-        </div>
-      </div>
-      <hr>
-      <div class="share-container">
-        <h5><i class="fas fa-share"></i> Share</h5>
-        <div class="d-flex flex-row">
-          <div class="share-item"><i class="fab fa-facebook-f"></i>Facebook</div>
-          <div class="share-item"><i class="fab fa-linkedin-in"></i>Linkedin</div>
-          <div class="share-item"><i class="fab fa-twitter"></i>Twitter</div>
-        </div>
-      </div>
-      <hr>
-      <div class="related-post">
-        <h4>Related post</h4>
-        <div class="card mb-3" style="max-height: 160px;">
-          <div class="row g-0">
-            <div class="col-md-4" style="max-height: 180px;">
-              <img src="/public/assets/images/blog/wall-1.jpg" alt="...">
+          <hr>
+          <div class="share-container">
+            <h5><i class="fas fa-share"></i> Share</h5>
+            <div class="d-flex flex-row">
+              <div class="share-item"><i class="fab fa-facebook-f"></i>Facebook</div>
+              <div class="share-item"><i class="fab fa-linkedin-in"></i>Linkedin</div>
+              <div class="share-item"><i class="fab fa-twitter"></i>Twitter</div>
             </div>
-            <div class="col-md-8">
+          </div>
+          <hr>
+          <div class="related-post">
+            <h4>Related post</h4>
+            <div class="card mb-3" style="max-height: 160px;">
+              <div class="row g-0">
+                <div class="col-md-4" style="max-height: 180px;">
+                  <img src="/public/assets/images/blog/wall-1.jpg" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text"><small class="text-muted"><i class="fas fa-calendar-alt"></i>&nbsp; October 10,
+                        2021</small></p>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                      additional content.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3" style="max-height: 160px;">
+              <div class="row g-0">
+                <div class="col-md-4" style="max-height: 180px;">
+                  <img src="/public/assets/images/blog/wall-2.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text"><small class="text-muted"><i class="fas fa-calendar-alt"></i>&nbsp; October 11,
+                        2021</small></p>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                      additional content.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3" style="max-height: 160px;">
+              <div class="row g-0">
+                <div class="col-md-4" style="max-height: 180px;">
+                  <img src="/public/assets/images/blog/wall-3.jpg" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text"><small class="text-muted"><i class="fas fa-calendar-alt"></i>&nbsp; October 12,
+                        2021</small></p>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                      additional content.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <%- include('../../partials/comment-section.ejs') %>
+        </div>
+        <div class="index-table-section">
+          <div class="my-index-table">
+            <h5>Index table</h5>
+            <nav class="flex-column ms-3">
+              <a href="#item-1"><i class="fas fa-chevron-right"></i> 1. Introduction</a><br>
+              <a href="#item-2"><i class="fas fa-chevron-right"></i> 2. Front end</a>
+              <nav class="flex-column ms-3">
+                <a href="#item-2-1"><i class="fas fa-chevron-right"></i> 2.1 Introduction</a><br>
+                <a href="#item-2-2"><i class="fas fa-chevron-right"></i> 2.2 Language</a><br>
+                <a href="#item-2-3"><i class="fas fa-chevron-right"></i> 2.3 Working with the front end</a>
+              </nav>
+              <a href="#item-3"><i class="fas fa-chevron-right"></i> 2. Back end</a>
+              <nav class="flex-column ms-3">
+                <a href="#item-3-1"><i class="fas fa-chevron-right"></i> 2.1 Introduction</a><br>
+                <a href="#item-3-2"><i class="fas fa-chevron-right"></i> 2.2 Language</a><br>
+                <a href="#item-3-3"><i class="fas fa-chevron-right"></i> 2.3 Working with the back end</a>
+              </nav>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="other-post">
+        <h2>New posts</h2>
+        <div class="row">
+          <div class="col">
+            <div class="card mb-3 new-post-card">
+              <div class="img-container">
+                <img src="/public/assets/images/blog/wall-4.jpg" class="card-img-top fit-img" alt="...">
+              </div>
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
-                <p class="card-text"><small class="text-muted"><i class="fas fa-calendar-alt"></i>&nbsp; October 10, 2021</small></p>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
             </div>
           </div>
-        </div>
-        <div class="card mb-3" style="max-height: 160px;">
-          <div class="row g-0">
-            <div class="col-md-4" style="max-height: 180px;">
-              <img src="/public/assets/images/blog/wall-2.jpg" class="img-fluid rounded-start" alt="...">
-            </div>
-            <div class="col-md-8">
+          <div class="col">
+            <div class="card mb-3 new-post-card">
+              <div class="img-container">
+                <img src="/public/assets/images/blog/wall-5.jpg" class="card-img-top fit-img" alt="...">
+              </div>
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
-                <p class="card-text"><small class="text-muted"><i class="fas fa-calendar-alt"></i>&nbsp; October 11, 2021</small></p>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
             </div>
           </div>
-        </div>
-        <div class="card mb-3" style="max-height: 160px;">
-          <div class="row g-0">
-            <div class="col-md-4" style="max-height: 180px;">
-              <img src="/public/assets/images/blog/wall-3.jpg" alt="...">
-            </div>
-            <div class="col-md-8">
+          <div class="col">
+            <div class="card mb-3 new-post-card">
+              <div class="img-container">
+                <img src="/public/assets/images/blog/wall-6.jpg" class="card-img-top fit-img" alt="...">
+              </div>
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
-                <p class="card-text"><small class="text-muted"><i class="fas fa-calendar-alt"></i>&nbsp; October 12, 2021</small></p>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="card mb-3 new-post-card">
+              <div class="img-container">
+                <img src="/public/assets/images/blog/wall-7.jpg" class="card-img-top fit-img" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-3 new-post-card">
+              <div class="img-container">
+                <img src="/public/assets/images/blog/wall-8.jpg" class="card-img-top fit-img" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-3 new-post-card">
+              <div class="img-container">
+                <img src="/public/assets/images/blog/wall-9.jpg" class="card-img-top fit-img" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <hr>
-      <%- include('../../partials/comment-section.ejs') %> 
+
     </div>
-    <div class="index-table-section">
-      <div class="my-index-table">
-        <h5>Index table</h5>
-        <nav class="flex-column ms-3">
-          <a href="#item-1"><i class="fas fa-chevron-right"></i> 1. Giới thiệu</a><br>
-          <a href="#item-2"><i class="fas fa-chevron-right"></i> 2. Front end</a>
-          <nav class="flex-column ms-3">
-            <a href="#item-2-1"><i class="fas fa-chevron-right"></i> 2.1 Giới thiệu</a><br>
-            <a href="#item-2-2"><i class="fas fa-chevron-right"></i> 2.2 Ngôn ngữ</a><br>
-            <a href="#item-2-3"><i class="fas fa-chevron-right"></i> 2.3 Làm việc với front end</a>
-          </nav>
-          <a href="#item-3"><i class="fas fa-chevron-right"></i> 2. Back end</a>
-          <nav class="flex-column ms-3">
-            <a href="#item-3-1"><i class="fas fa-chevron-right"></i> 2.1 Giới thiệu</a><br>
-            <a href="#item-3-2"><i class="fas fa-chevron-right"></i> 2.2 Ngôn ngữ</a><br>
-            <a href="#item-3-3"><i class="fas fa-chevron-right"></i> 2.3 Làm việc với back end</a>
-          </nav>
-        </nav>
-      </div>
-    </div>
-  </div>
-  <div class="other-post">
-    <h2>New posts</h2>
-    <div class="row">
-      <div class="col">
-        <div class="card mb-3 new-post-card">
-          <div class="img-container">
-            <img src="/public/assets/images/blog/wall-4.jpg" class="card-img-top fit-img" alt="...">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card mb-3 new-post-card">
-          <div class="img-container">
-            <img src="/public/assets/images/blog/wall-5.jpg" class="card-img-top fit-img" alt="...">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card mb-3 new-post-card">
-          <div class="img-container">
-            <img src="/public/assets/images/blog/wall-6.jpg" class="card-img-top fit-img" alt="...">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <div class="card mb-3 new-post-card">
-          <div class="img-container">
-            <img src="/public/assets/images/blog/wall-7.jpg" class="card-img-top fit-img" alt="...">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card mb-3 new-post-card">
-          <div class="img-container">
-            <img src="/public/assets/images/blog/wall-8.jpg" class="card-img-top fit-img" alt="...">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card mb-3 new-post-card">
-          <div class="img-container">
-            <img src="/public/assets/images/blog/wall-9.jpg" class="card-img-top fit-img" alt="...">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-</div>

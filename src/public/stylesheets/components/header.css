@@ -53,3 +53,9 @@ header .header-btn-wrapper button:last-of-type{
   background: url('/public/assets/images/user.png') center;
   background-size: 3rem 3rem;
 }
+.register-btn a{
+  color: white;
+}
+.register-btn a:hover{
+  color: white;
+}
