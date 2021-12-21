@@ -17,24 +17,24 @@
     </div>
     <div class="collapse" id="advanced-search-panel">
       <div style="padding: .5rem 0;">
-        <span>Chuyên mục: </span>
+        <span>Categories: </span>
         <select name="category" aria-label=".form-select-sm example">
-          <option value="all" selected>Tất cả</option>
+          <option value="all" selected>All</option>
           <option value="html">HTML</option>
-          <option value="js">js</option>
-          <option value="css">css</option>
+          <option value="js">Js</option>
+          <option value="css">Css</option>
         </select>
-        <span>Thời gian: </span>
+        <span>Time: </span>
         <select name="time" aria-label=".form-select-sm example">
-          <option value="Infinity" selected>Tất cả</option>
-          <option value="1">Hôm nay</option>
-          <option value="7">7 ngày trước</option>
-          <option value="30">30 ngày trước</option>
+          <option value="Infinity" selected>All</option>
+          <option value="1">Today</option>
+          <option value="7">7 days ago</option>
+          <option value="30">30 days ago</option>
         </select>
       </div>
     </div>
   </form>
-  <p><strong><%= result.length %></strong> Kết quả phù hợp</p>
+  <p><strong><%= result.length %></strong> appropriate results</p>
   <div class="result-box">
     <% if(result.length == 0){ %>
       <%- include('../../partials/no-result-item.ejs') %> 
